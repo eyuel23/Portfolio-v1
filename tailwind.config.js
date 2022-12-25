@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        brandColor: "#F5EBE0",
+      },
+      fontFamily: {
+        didot: "Didot",
+      },
+    },
   },
   plugins: [],
 };
