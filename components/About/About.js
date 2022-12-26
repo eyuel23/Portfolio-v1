@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function About() {
-  return <section>About</section>;
+  return <section className="bg-white min-h-screen">About</section>;
 }
