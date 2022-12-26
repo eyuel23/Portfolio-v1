@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         primary: "#251f1f",
+        gold: "#A68A72",
       },
       fontFamily: {
         didot: "Didot",

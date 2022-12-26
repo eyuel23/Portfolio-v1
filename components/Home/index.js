@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Navigation from "../Navigation";
-import memoji from "../../public/memoji.png";
+import memoji from "../../public/header.png";
 
 export default function Hero() {
   return (
