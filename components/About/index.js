@@ -6,16 +6,16 @@ import code from "../../public/code.svg";
 import light from "../../public/light.svg";
 import icon from "../../public/icons1.svg";
 import icon2 from "../../public/icons2.svg";
-import designMe from "../../public/designMemoji.jpg";
-import codeMe from "../../public/codeMemoji.jpg";
-import creativityMe from "../../public/creativeMemoji.jpg";
+import designMe from "../../public/designMemoji.png";
+import codeMe from "../../public/codeMemoji.png";
+import creativityMe from "../../public/creativeMemoji.png";
 export default function About() {
   return (
-    <section className="bg-white min-h-screen h-[90rem] flex flex-col gap-40 relative pt-20">
-      <div className="w-[100%] flex flex-col gap-10">
+    <section className="bg-white min-h-screen h-[95rem] flex flex-col gap-52 relative pt-20 overflow-hidden">
+      <div className="w-[100%] flex flex-col gap-8">
         <Heading span={"01."} heading={"About Me"} />
-        <div className="text-black text-4xl text-center leading-7 ">
-          <p className="leading-10  ">
+        <div className="text-black text-4xl text-center ">
+          <p className=" leading-snug font-light ">
             I’m a Frontend developer and UI/UX designer specializing in building
             and designing
             <br /> exceptional digital experiences.
@@ -24,8 +24,13 @@ export default function About() {
       </div>
       <div className="flex justify-around text-center">
         <div className="flex flex-col items-center gap-10">
-          <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl">
-            <Image src={design} alt="design" width={120} height={120} />
+          <div className="relative">
+            <div className="absolute -top-72 ">
+              <Image src={designMe} alt="create" />
+            </div>
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+              <Image src={design} alt="design" width={120} height={120} />
+            </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
@@ -50,8 +55,13 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-10">
-          <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl">
-            <Image src={code} alt="design" width={120} height={120} />
+          <div className="relative">
+            <div className="absolute -top-72 ">
+              <Image src={codeMe} alt="create" />
+            </div>
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+              <Image src={code} alt="design" width={120} height={120} />
+            </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
@@ -77,8 +87,13 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-10">
-          <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl">
-            <Image src={light} alt="design" width={120} height={120} />
+          <div className="relative">
+            <div className="absolute -top-72 ">
+              <Image src={creativityMe} alt="create" />
+            </div>
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+              <Image src={light} alt="design" width={120} height={120} />
+            </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
