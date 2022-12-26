@@ -3,6 +3,7 @@ import React from "react";
 import Heading from "../heading";
 import vogue from "../../public/vogue.webp";
 import Image from "next/image";
+import github from "../../public/github.svg";
 export default function Project() {
   return (
     <section className="flex flex-col h-[90rem] min-h-screen bg-brandColor gap-24 pt-20">
@@ -14,7 +15,7 @@ export default function Project() {
               <h1 className="text-6xl">CoinPool</h1>
               <h1 className="text-xl ">Next-js Tailwind Spline Figma Api</h1>
             </div>
-            <div className="flex gap-40 items-end">
+            <div className="flex gap-10 items-end">
               <p className="text-3xl text-center">
                 a crypto currency site where you
                 <br /> can buy and sell.
@@ -22,14 +23,41 @@ export default function Project() {
               <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
                 <Link href={"https://coin-pool.vercel.app/"}>coinpool.com</Link>
               </button>
+              <div>
+                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                  <Image src={github} alt="github" />
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="border-2 border-black flex items-baseline gap-10 h-52 ">
+          <div className="border-2 border-black flex items-baseline gap-9 h-52 ">
+            <div className="flex flex-col items-center gap-6 m-10">
+              <h1 className="text-6xl">Slack</h1>
+              <h1 className="text-xl ">Next-js Tailwind Firebase</h1>
+            </div>
+            <div className="flex gap-14 items-end">
+              <p className="text-3xl text-center">
+                a remake of Slack app using firebase
+                <br /> with functionality.
+              </p>
+              <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
+                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                  slack.com
+                </Link>
+              </button>
+              <div>
+                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                  <Image src={github} alt="github" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="border-2 border-black flex items-baseline gap-9 h-52 ">
             <div className="flex flex-col items-center gap-6 m-10">
               <h1 className="text-6xl">Vogue</h1>
               <h1 className="text-xl ">React Css-module Redux Figma </h1>
             </div>
-            <div className="flex gap-40 items-end">
+            <div className="flex gap-16 items-end">
               <p className="text-3xl text-center">
                 a ecommerce website inspired
                 <br /> by vogue design
@@ -39,40 +67,33 @@ export default function Project() {
                   Vogue.com
                 </Link>
               </button>
+              <div>
+                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                  <Image src={github} alt="github" />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="border-2 border-black flex items-baseline gap-10 h-52 ">
             <div className="flex flex-col items-center gap-6 m-10">
-              <h1 className="text-6xl">Vogue</h1>
-              <h1 className="text-xl ">React Css-module Redux Figma </h1>
+              <h1 className="text-6xl">DigitalLife</h1>
+              <h1 className="text-xl ">React Typescript Tailwind Figma </h1>
             </div>
-            <div className="flex gap-40 items-end">
+            <div className="flex gap-14 items-end">
               <p className="text-3xl text-center">
                 a ecommerce website inspired
                 <br /> by vogue design
               </p>
               <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
                 <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
-                  Vogue.com
+                  digital.com
                 </Link>
               </button>
-            </div>
-          </div>
-          <div className="border-2 border-black flex items-baseline gap-10 h-52 ">
-            <div className="flex flex-col items-center gap-6 m-10">
-              <h1 className="text-6xl">Vogue</h1>
-              <h1 className="text-xl ">React Css-module Redux Figma </h1>
-            </div>
-            <div className="flex gap-40 items-end">
-              <p className="text-3xl text-center">
-                a ecommerce website inspired
-                <br /> by vogue design
-              </p>
-              <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
+              <div>
                 <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
-                  Vogue.com
+                  <Image src={github} alt="github" />
                 </Link>
-              </button>
+              </div>
             </div>
           </div>
         </div>
