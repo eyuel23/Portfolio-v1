@@ -21,7 +21,7 @@ export default function About() {
     console.log("here");
   };
   return (
-    <section className="bg-white min-h-screen h-[95rem] flex flex-col gap-40 relative pt-20 overflow-hidden">
+    <section className="bg-brandColor min-h-screen h-[95rem] flex flex-col gap-40 relative pt-20 overflow-hidden">
       <div className="w-[100%] flex flex-col gap-8">
         <Heading span={"01."} heading={"About Me"} />
         <div className="text-black text-4xl text-center ">
@@ -37,12 +37,15 @@ export default function About() {
           <div className="relative">
             {show && (
               <motion.div
-                initial={{ x: "-100vw" }}
-                animate={{ x: 0 }}
-                transition={{ type: "spring", stiffness: 120 }}
-                className="absolute -top-72 "
+                initial={{ y: "10vw" }}
+                animate={{ y: 0 }}
+                transition={{
+                  x: { duration: 1 },
+                  default: { ease: "linear" },
+                }}
+                className="absolute -top-96 -left-40  "
               >
-                <Image src={designMe} alt="create" />
+                <Image src={designMe} alt="create" className="-rotate-12" />
               </motion.div>
             )}
             <div
@@ -78,9 +81,17 @@ export default function About() {
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
             {show && (
-              <div className="absolute -top-72 ">
+              <motion.div
+                initial={{ y: "10vw" }}
+                animate={{ y: 0 }}
+                transition={{
+                  x: { duration: 1 },
+                  default: { ease: "linear" },
+                }}
+                className="absolute -top-72 "
+              >
                 <Image src={codeMe} alt="create" />
-              </div>
+              </motion.div>
             )}
             <div
               className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
@@ -125,9 +136,17 @@ export default function About() {
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
             {show && (
-              <div className="absolute -top-72 ">
-                <Image src={creativityMe} alt="create" />
-              </div>
+              <motion.div
+                initial={{ y: "10vw" }}
+                animate={{ y: 0 }}
+                transition={{
+                  x: { duration: 1 },
+                  default: { ease: "linear" },
+                }}
+                className="absolute -top-96 -right-40"
+              >
+                <Image src={creativityMe} alt="create" className="rotate-12" />
+              </motion.div>
             )}
             <div
               className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
@@ -153,9 +172,9 @@ export default function About() {
             </h1>
             <div className="flex font-normal text-2xl text-start">
               <ul className="flex flex-col gap-4 list-disc">
+                <li>DRIBBLE</li>
                 <li>FIGMA</li>
                 <li>PHOTOSHOP</li>
-                <li>DESGIN SYSTEM</li>
               </ul>
             </div>
           </div>
