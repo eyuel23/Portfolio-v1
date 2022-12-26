@@ -9,6 +9,9 @@ module.exports = {
       textColor: {
         brandColor: "#F5EBE0",
       },
+      colors: {
+        primary: "#251f1f",
+      },
       fontFamily: {
         didot: "Didot",
       },
