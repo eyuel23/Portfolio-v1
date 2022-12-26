@@ -1,18 +1,18 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import Heading from "../heading";
 import design from "../../public/design.svg";
 import code from "../../public/code.svg";
 import light from "../../public/light.svg";
 import icon from "../../public/icons1.svg";
 import icon2 from "../../public/icons2.svg";
+import icon3 from "../../public/icon3.svg";
 import designMe from "../../public/designMemoji.png";
 import codeMe from "../../public/codeMemoji.png";
 import creativityMe from "../../public/creativeMemoji.png";
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <section className="bg-brandColor min-h-screen h-[95rem] flex flex-col gap-40 relative pt-20 overflow-hidden">
+    <section className="bg-brandColor min-h-screen h-[110rem] flex flex-col gap-40 relative pt-40 overflow-hidden">
       <div className="w-[100%] flex flex-col gap-8">
         <Heading span={"01."} heading={"About Me"} />
         <div className="text-black text-4xl text-center ">
@@ -150,7 +150,7 @@ export default function About() {
               <ul className="flex flex-col gap-4 list-disc">
                 <li>DRIBBLE</li>
                 <li>FIGMA</li>
-                <li>PHOTOSHOP</li>
+                <li>NOTION</li>
               </ul>
             </div>
           </div>
@@ -166,6 +166,13 @@ export default function About() {
       <Image
         className="absolute left-3 top-80 icon"
         src={icon2}
+        width={100}
+        height={100}
+        alt="icon"
+      />
+      <Image
+        className="absolute right-32 bottom-10"
+        src={icon3}
         width={100}
         height={100}
         alt="icon"

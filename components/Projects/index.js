@@ -30,12 +30,12 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="border-2 border-black flex items-baseline gap-9 h-52 ">
+          <div className="border-2 border-black flex items-baseline gap-8 h-52 ">
             <div className="flex flex-col items-center gap-6 m-10">
               <h1 className="text-6xl">Slack</h1>
-              <h1 className="text-xl ">Next-js Tailwind Firebase</h1>
+              <h1 className="text-xl ">Next-js Firebase Typescript</h1>
             </div>
-            <div className="flex gap-14 items-end">
+            <div className="flex gap-12 items-end">
               <p className="text-3xl text-center">
                 a remake of Slack app using firebase
                 <br /> with functionality.
@@ -97,13 +97,34 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="mr-20">
+        <div className=" relative w-2/5 h-full">
           <Image
             src={vogue}
             alt="project"
             width={380}
             height={380}
-            className="rounded-2xl overflow-hidden"
+            className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          />
+          <Image
+            src={vogue}
+            alt="project"
+            width={380}
+            height={380}
+            className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          />
+          <Image
+            src={vogue}
+            alt="project"
+            width={380}
+            height={380}
+            className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          />
+          <Image
+            src={vogue}
+            alt="project"
+            width={380}
+            height={380}
+            className="rounded-2xl overflow-hidden absolute left-32 top-5 "
           />
         </div>
       </div>
