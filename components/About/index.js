@@ -9,6 +9,7 @@ import icon2 from "../../public/icons2.svg";
 import designMe from "../../public/designMemoji.png";
 import codeMe from "../../public/codeMemoji.png";
 import creativityMe from "../../public/creativeMemoji.png";
+import { motion } from "framer-motion";
 export default function About() {
   const [show, setShow] = useState(false);
   const showHandler = () => {
@@ -35,9 +36,14 @@ export default function About() {
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
             {show && (
-              <div className="absolute -top-72 ">
+              <motion.div
+                initial={{ x: "-100vw" }}
+                animate={{ x: 0 }}
+                transition={{ type: "spring", stiffness: 120 }}
+                className="absolute -top-72 "
+              >
                 <Image src={designMe} alt="create" />
-              </div>
+              </motion.div>
             )}
             <div
               className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
