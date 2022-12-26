@@ -11,15 +11,6 @@ import codeMe from "../../public/codeMemoji.png";
 import creativityMe from "../../public/creativeMemoji.png";
 import { motion } from "framer-motion";
 export default function About() {
-  const [show, setShow] = useState(false);
-  const showHandler = () => {
-    setShow(true);
-    console.log("here");
-  };
-  const unshowHandler = () => {
-    setShow(false);
-    console.log("here");
-  };
   return (
     <section className="bg-brandColor min-h-screen h-[95rem] flex flex-col gap-40 relative pt-20 overflow-hidden">
       <div className="w-[100%] flex flex-col gap-8">
@@ -35,24 +26,19 @@ export default function About() {
       <div className="flex justify-around text-center">
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            {show && (
-              <motion.div
-                initial={{ y: "10vw" }}
-                animate={{ y: 0 }}
-                transition={{
-                  x: { duration: 1 },
-                  default: { ease: "linear" },
-                }}
-                className="absolute -top-96 -left-40  "
-              >
-                <Image src={designMe} alt="create" className="-rotate-12" />
-              </motion.div>
-            )}
-            <div
-              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
-              onMouseEnter={showHandler}
-              onMouseLeave={unshowHandler}
+            <motion.div
+              initial={{ opacity: 0, y: "10vw" }}
+              whileInView={{ opacity: 1, y: "0vw" }}
+              transition={{
+                y: { duration: 1, delay: 1 },
+                default: { ease: "linear" },
+              }}
+              className="absolute -top-96 -left-40  "
             >
+              <Image src={designMe} alt="create" className="-rotate-12" />
+            </motion.div>
+
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
               <Image src={design} alt="design" width={120} height={120} />
             </div>
           </div>
@@ -80,24 +66,19 @@ export default function About() {
         </div>
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            {show && (
-              <motion.div
-                initial={{ y: "10vw" }}
-                animate={{ y: 0 }}
-                transition={{
-                  x: { duration: 1 },
-                  default: { ease: "linear" },
-                }}
-                className="absolute -top-72 "
-              >
-                <Image src={codeMe} alt="create" />
-              </motion.div>
-            )}
-            <div
-              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
-              onMouseEnter={showHandler}
-              onMouseLeave={unshowHandler}
+            <motion.div
+              initial={{ opacity: 0, y: "10vw" }}
+              whileInView={{ opacity: 1, y: "0vw" }}
+              transition={{
+                y: { duration: 1, delay: 1 },
+                default: { ease: "linear" },
+              }}
+              className="absolute -top-72 "
             >
+              <Image src={codeMe} alt="create" />
+            </motion.div>
+
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
               <Image src={code} alt="design" width={120} height={120} />
             </div>
           </div>
@@ -135,24 +116,19 @@ export default function About() {
         </div>
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            {show && (
-              <motion.div
-                initial={{ y: "10vw" }}
-                animate={{ y: 0 }}
-                transition={{
-                  x: { duration: 1 },
-                  default: { ease: "linear" },
-                }}
-                className="absolute -top-96 -right-40"
-              >
-                <Image src={creativityMe} alt="create" className="rotate-12" />
-              </motion.div>
-            )}
-            <div
-              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
-              onMouseEnter={showHandler}
-              onMouseLeave={unshowHandler}
+            <motion.div
+              initial={{ opacity: 0, y: "10vw" }}
+              whileInView={{ opacity: 1, y: "0vw" }}
+              transition={{
+                y: { duration: 1, delay: 1 },
+                default: { ease: "linear" },
+              }}
+              className="absolute -top-96 -right-40"
             >
+              <Image src={creativityMe} alt="create" className="rotate-12" />
+            </motion.div>
+
+            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
               <Image src={light} alt="design" width={120} height={120} />
             </div>
           </div>
