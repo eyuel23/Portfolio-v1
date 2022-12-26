@@ -6,7 +6,7 @@ import Image from "next/image";
 import github from "../../public/github.svg";
 export default function Project() {
   return (
-    <section className="flex flex-col h-[90rem] min-h-screen bg-brandColor gap-24 pt-20">
+    <section className="flex flex-col h-[110rem] min-h-screen bg-brandColor gap-24 pt-40">
       <Heading span={"02"} heading={"WORK"} />
       <div className=" w-[95%] flex self-center items-center  justify-between">
         <div className="flex flex-col w-3/5 gap-10">
