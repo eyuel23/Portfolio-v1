@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../heading";
 import design from "../../public/design.svg";
 import code from "../../public/code.svg";
@@ -10,6 +10,11 @@ import designMe from "../../public/designMemoji.png";
 import codeMe from "../../public/codeMemoji.png";
 import creativityMe from "../../public/creativeMemoji.png";
 export default function About() {
+  const [show, setShow] = useState(false);
+  const memojiHandler = () => {
+    setShow(true);
+    console.log("here");
+  };
   return (
     <section className="bg-white min-h-screen h-[95rem] flex flex-col gap-52 relative pt-20 overflow-hidden">
       <div className="w-[100%] flex flex-col gap-8">
@@ -25,16 +30,21 @@ export default function About() {
       <div className="flex justify-around text-center">
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            <div className="absolute -top-72 ">
-              <Image src={designMe} alt="create" />
-            </div>
-            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+            {show && (
+              <div className="absolute -top-72 ">
+                <Image src={designMe} alt="create" />
+              </div>
+            )}
+            <div
+              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
+              onMouseEnter={memojiHandler}
+            >
               <Image src={design} alt="design" width={120} height={120} />
             </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
-            <h1 className="font-semibold text-5xl border-b-2 border-black">
+            <h1 className=" font-medium text-5xl border-b-2 w-40 border-black">
               DESIGN
             </h1>
             <h1 className="text-3xl">
@@ -56,16 +66,21 @@ export default function About() {
         </div>
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            <div className="absolute -top-72 ">
-              <Image src={codeMe} alt="create" />
-            </div>
-            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+            {show && (
+              <div className="absolute -top-72 ">
+                <Image src={codeMe} alt="create" />
+              </div>
+            )}
+            <div
+              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
+              onMouseEnter={memojiHandler}
+            >
               <Image src={code} alt="design" width={120} height={120} />
             </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
-            <h1 className="font-semibold text-5xl border-b-2 border-black">
+            <h1 className="font-medium text-5xl border-b-2 w-72 border-black">
               ENGINEERING
             </h1>
             <h1 className="text-3xl">
@@ -77,27 +92,41 @@ export default function About() {
             <h1 className="text-2xl font-semibold">
               Technologies I’ve been working with:
             </h1>
-            <div className="flex font-normal text-2xl text-start">
+            <div className="flex font-normal gap-16 text-2xl text-start">
+              <ul className="flex flex-col gap-4 font-normal list-disc">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>REDUX</li>
+              </ul>
               <ul className="flex flex-col gap-4 list-disc">
-                <li>FIGMA</li>
-                <li>PHOTOSHOP</li>
-                <li>DESGIN SYSTEM</li>
+                <li>SASS</li>
+                <li>TAILWIND</li>
+                <li>HTML</li>
+                <li>NEXT-JS</li>
+                <li>NODE-JS</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
-            <div className="absolute -top-72 ">
-              <Image src={creativityMe} alt="create" />
-            </div>
-            <div className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10">
+            {show && (
+              <div className="absolute -top-72 ">
+                <Image src={creativityMe} alt="create" />
+              </div>
+            )}
+            <div
+              className="bg-primary rounded-full h-80 w-80 flex items-center justify-center shadow-xl relative z-10"
+              onMouseEnter={memojiHandler}
+            >
               <Image src={light} alt="design" width={120} height={120} />
             </div>
           </div>
 
           <div className="flex flex-col items-center text-black gap-8">
-            <h1 className="font-semibold text-5xl border-b-2 border-black w-60 inline-block">
+            <h1 className="font-medium text-5xl border-b-2 border-black w-60 inline-block">
               CREATIVITY
             </h1>
             <h1 className="text-3xl">
