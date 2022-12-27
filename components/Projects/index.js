@@ -5,7 +5,40 @@ import vogue from "../../public/vogue.webp";
 import Image from "next/image";
 import github from "../../public/github.svg";
 import { motion } from "framer-motion";
+import digitallife from "../../public/digitallife.jpg";
+import coinpool from "../../public/coinpool.png";
+import virgin from "../../public/virgin.png";
+
 export default function Project() {
+  const [opacity, setOpacity] = useState("0");
+  const [opacity1, setOpacity1] = useState("0");
+  const [opacity2, setOpacity2] = useState("0");
+  const [opacity3, setOpacity3] = useState("0");
+  const showProject = (e) => {
+    e.preventDefault();
+    const value = e.target.closest("div div").id;
+    console.log(value);
+    if (value === "slack") {
+      setOpacity1("1");
+    } else if (value === "vogue") {
+      setOpacity2("1");
+    } else if (value === "digitallife") {
+      setOpacity3("1");
+    } else if (value === "coinpool") {
+      setOpacity("1");
+    }
+
+    console.log(opacity3);
+  };
+  const hideProject = (e) => {
+    e.preventDefault();
+    setOpacity("0");
+    setOpacity1("0");
+    setOpacity2("0");
+    setOpacity3("0");
+
+    console.log(opacity3);
+  };
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -19,12 +52,20 @@ export default function Project() {
       <Heading span={"02"} heading={"WORK"} />
       <div className=" w-[95%] flex self-center items-center  justify-between">
         <div className="flex flex-col w-3/5 gap-10">
-          <div className="border-2 border-black flex items-baseline gap-10 h-52 ">
-            <div className="flex flex-col items-center gap-6 m-10">
+          <div
+            className="border-2 border-black flex items-baseline gap-10 h-52 "
+            id="coinpool"
+            onMouseEnter={showProject}
+            onMouseLeave={hideProject}
+          >
+            <div
+              className="flex flex-col items-center gap-6 m-10"
+              id="coinpool"
+            >
               <h1 className="text-6xl">CoinPool</h1>
               <h1 className="text-xl ">Next-js Tailwind Spline Figma Api</h1>
             </div>
-            <div className="flex gap-10 items-end">
+            <div className="flex gap-10 items-end" id="coinpool">
               <p className="text-3xl text-center">
                 a crypto currency site where you
                 <br /> can buy and sell.
@@ -39,12 +80,17 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="border-2 border-black flex items-baseline gap-8 h-52 ">
-            <div className="flex flex-col items-center gap-6 m-10">
+          <div
+            className="border-2 border-black flex items-baseline gap-8 h-52 "
+            id="slack"
+            onMouseEnter={showProject}
+            onMouseLeave={hideProject}
+          >
+            <div className="flex flex-col items-center gap-6 m-10" id="slack">
               <h1 className="text-6xl">Slack</h1>
               <h1 className="text-xl ">Next-js Firebase Typescript</h1>
             </div>
-            <div className="flex gap-12 items-end">
+            <div className="flex gap-12 items-end" id="slack">
               <p className="text-3xl text-center">
                 a remake of Slack app using firebase
                 <br /> with functionality.
@@ -61,12 +107,17 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className="border-2 border-black flex items-baseline gap-9 h-52 ">
-            <div className="flex flex-col items-center gap-6 m-10">
+          <div
+            className="border-2 border-black flex items-baseline gap-9 h-52 "
+            id="vogue"
+            onMouseEnter={showProject}
+            onMouseLeave={hideProject}
+          >
+            <div className="flex flex-col items-center gap-6 m-10" id="vogue">
               <h1 className="text-6xl">Vogue</h1>
               <h1 className="text-xl ">React Css-module Redux Figma </h1>
             </div>
-            <div className="flex gap-16 items-end">
+            <div className="flex gap-16 items-end" id="vogue">
               <p className="text-3xl text-center">
                 a ecommerce website inspired
                 <br /> by vogue design
@@ -85,6 +136,8 @@ export default function Project() {
           </div>
           <div
             className="border-2 border-black flex items-baseline gap-10 h-52 "
+            onMouseEnter={showProject}
+            onMouseLeave={hideProject}
             id="digiallife"
           >
             <div
@@ -113,58 +166,74 @@ export default function Project() {
           </div>
         </div>
         <div className=" relative w-2/5 h-full">
-          <motion.Image
+          <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: opacity }}
             transition={{
               delay: 0.5,
               duration: 0.7,
             }}
-            src={vogue}
-            alt="project"
-            width={380}
-            height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
-          />
-          <motion.Image
+          >
+            <Image
+              src={coinpool}
+              alt="project"
+              width={380}
+              height={380}
+              className="rounded-2xl overflow-hidden  "
+            />
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: opacity1 }}
             transition={{
               delay: 0.5,
               duration: 0.7,
             }}
-            src={vogue}
-            alt="project"
-            width={380}
-            height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
-          />
-          <motion.Image
+          >
+            <Image
+              src={virgin}
+              alt="project"
+              width={380}
+              height={380}
+              className="rounded-2xl overflow-hidden  "
+            />
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: opacity2 }}
             transition={{
               delay: 0.5,
               duration: 0.7,
             }}
-            src={vogue}
-            alt="project"
-            width={380}
-            height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
-          />
-          <motion.Image
+          >
+            <Image
+              src={vogue}
+              alt="project"
+              width={380}
+              height={380}
+              className="rounded-2xl overflow-hidden  "
+            />
+          </motion.div>
+          <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: opacity3 }}
             transition={{
               delay: 0.5,
-              duration: 0.7,
+              duration: 0.5,
             }}
-            src={vogue}
-            alt="project"
-            width={380}
-            height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
-          />
+          >
+            <Image
+              src={digitallife}
+              alt="project"
+              width={380}
+              height={380}
+              className="rounded-2xl overflow-hidden  "
+            />
+          </motion.div>
         </div>
       </div>
     </motion.section>
