@@ -5,7 +5,7 @@ import memoji from "../../public/header.png";
 
 export default function Hero() {
   return (
-    <header className="text-montserrat header min-h-screen text-brandColor flex flex-col justify-between gap-9">
+    <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9">
       <Navigation />
       <div className="flex items-center justify-center gap-40 self-center  ">
         <div>

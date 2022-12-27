@@ -1,12 +1,21 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../heading";
 import vogue from "../../public/vogue.webp";
 import Image from "next/image";
 import github from "../../public/github.svg";
+import { motion } from "framer-motion";
 export default function Project() {
   return (
-    <section className="flex flex-col h-[110rem] min-h-screen bg-brandColor gap-24 pt-40">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        duration: 0.7,
+      }}
+      className="flex flex-col h-[110rem] min-h-screen bg-brandColor gap-24 pt-40"
+    >
       <Heading span={"02"} heading={"WORK"} />
       <div className=" w-[95%] flex self-center items-center  justify-between">
         <div className="flex flex-col w-3/5 gap-10">
@@ -24,7 +33,7 @@ export default function Project() {
                 <Link href={"https://coin-pool.vercel.app/"}>coinpool.com</Link>
               </button>
               <div>
-                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                <Link href={"https://github.com/eyuel23/CoinPool"}>
                   <Image src={github} alt="github" />
                 </Link>
               </div>
@@ -46,7 +55,7 @@ export default function Project() {
                 </Link>
               </button>
               <div>
-                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                <Link href={"https://github.com/eyuel23/slack-remake"}>
                   <Image src={github} alt="github" />
                 </Link>
               </div>
@@ -68,29 +77,35 @@ export default function Project() {
                 </Link>
               </button>
               <div>
-                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                <Link href={"https://github.com/eyuel23/vogue-redesign"}>
                   <Image src={github} alt="github" />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="border-2 border-black flex items-baseline gap-10 h-52 ">
-            <div className="flex flex-col items-center gap-6 m-10">
+          <div
+            className="border-2 border-black flex items-baseline gap-10 h-52 "
+            id="digiallife"
+          >
+            <div
+              className="flex flex-col items-center gap-6 m-10"
+              id="digiallife"
+            >
               <h1 className="text-6xl">DigitalLife</h1>
               <h1 className="text-xl ">React Typescript Tailwind Figma </h1>
             </div>
-            <div className="flex gap-14 items-end">
+            <div className="flex gap-14 items-end" id="digiallife">
               <p className="text-3xl text-center">
                 a ecommerce website inspired
                 <br /> by vogue design
               </p>
               <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
-                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+                <Link href={"https://digitallife52.netlify.app"}>
                   digital.com
                 </Link>
               </button>
-              <div>
-                <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+              <div id="digiallife">
+                <Link href={"https://github.com/eyuel23/DigitalLife"}>
                   <Image src={github} alt="github" />
                 </Link>
               </div>
@@ -98,28 +113,52 @@ export default function Project() {
           </div>
         </div>
         <div className=" relative w-2/5 h-full">
-          <Image
+          <motion.Image
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.7,
+            }}
             src={vogue}
             alt="project"
             width={380}
             height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
           />
-          <Image
+          <motion.Image
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.7,
+            }}
             src={vogue}
             alt="project"
             width={380}
             height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
           />
-          <Image
+          <motion.Image
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.7,
+            }}
             src={vogue}
             alt="project"
             width={380}
             height={380}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 "
           />
-          <Image
+          <motion.Image
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.7,
+            }}
             src={vogue}
             alt="project"
             width={380}
@@ -128,6 +167,6 @@ export default function Project() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

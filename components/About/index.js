@@ -12,7 +12,15 @@ import creativityMe from "../../public/creativeMemoji.png";
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <section className="bg-brandColor min-h-screen h-[110rem] flex flex-col gap-40 relative pt-40 overflow-hidden">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        duration: 0.7,
+      }}
+      className="bg-brandColor min-h-screen h-[110rem] flex flex-col gap-40 relative pt-40 overflow-hidden"
+    >
       <div className="w-[100%] flex flex-col gap-8">
         <Heading span={"01."} heading={"About Me"} />
         <div className="text-black text-4xl text-center ">
@@ -177,6 +185,6 @@ export default function About() {
         height={100}
         alt="icon"
       />
-    </section>
+    </motion.section>
   );
 }

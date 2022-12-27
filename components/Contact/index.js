@@ -5,9 +5,10 @@ import Linkedin from "../../public/linkedin.svg";
 import Image from "next/image";
 import hey from "../../public/hey.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Contact() {
   return (
-    <footer className="flex flex-col items-center text-white gap-10 py-20 relative">
+    <footer className="flex flex-col items-center bg-primary text-white gap-10 py-20 relative">
       <h1 className="text-8xl font-medium">GET IN TOUCH</h1>
       <div className="border-2 border-white w-3/5 flex flex-col items-center gap-20 rounded-xl h-96 justify-center">
         <h1 className="text-6xl">Want to work together?</h1>
@@ -16,8 +17,12 @@ export default function Contact() {
         </button>
       </div>
       <div className="flex gap-10">
-        <Image className="" src={Twitter} width={50} height={50} alt="icon" />
-        <Image className="" src={Github} width={50} height={50} alt="icon" />
+        <Link href={"https://twitter.com/EyuelMulugeta21"}>
+          <Image className="" src={Twitter} width={50} height={50} alt="icon" />
+        </Link>
+        <Link href={"https://github.com/eyuel23"}>
+          <Image className="" src={Github} width={50} height={50} alt="icon" />
+        </Link>
         <Image className="" src={Linkedin} width={50} height={50} alt="icon" />
       </div>
       <motion.div
