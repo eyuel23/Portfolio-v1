@@ -14,6 +14,7 @@ export default function Project() {
         delay: 0.5,
         duration: 0.7,
       }}
+      id="projects"
       className="flex flex-col h-[95rem] min-h-screen bg-white gap-24 pt-20"
     >
       <Heading span={"02"} heading={"WORK"} />
