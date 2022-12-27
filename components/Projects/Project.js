@@ -4,13 +4,13 @@ import vogue from "../../public/vogue.webp";
 import Image from "next/image";
 import github from "../../public/github.svg";
 import { motion } from "framer-motion";
-import digitallife from "../../public/digitallife.png";
-import coinpool from "../../public/coinpool.png";
-import slack from "../../public/slackWorld.webp";
+import digitallife from "../../public/digitallife.jpg";
+import coinpool from "../../public/coinpool.jpg";
+import slack from "../../public/slack.jpg";
 import { AnimatePresence } from "framer-motion";
 
 export default function Project() {
-  const [opacity, setOpacity] = useState("0");
+  const [opacity, setOpacity] = useState("1");
   const [opacity1, setOpacity1] = useState("0");
   const [opacity2, setOpacity2] = useState("0");
   const [opacity3, setOpacity3] = useState("0");
@@ -158,9 +158,10 @@ export default function Project() {
             initial={{ opacity: 0 }}
             animate={{ opacity: opacity }}
             transition={{
+              delay: 0.5,
               duration: 1,
             }}
-            className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+            className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
           >
             <Image
               src={coinpool}
@@ -175,25 +176,27 @@ export default function Project() {
           initial={{ opacity: 0 }}
           animate={{ opacity: opacity1 }}
           transition={{
+            delay: 0.5,
             duration: 1,
           }}
-          className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
         >
           <Image
             src={slack}
             alt="project"
-            width={500}
-            height={500}
-            className="rounded-2xl overflow-hidden  "
+            width={380}
+            height={380}
+            sclassName="rounded-2xl overflow-hidden  "
           />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: opacity2 }}
           transition={{
+            delay: 0.5,
             duration: 1,
           }}
-          className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl "
         >
           <Image
             src={vogue}
@@ -207,16 +210,17 @@ export default function Project() {
           initial={{ opacity: 0 }}
           animate={{ opacity: opacity3 }}
           transition={{
+            delay: 0.5,
             duration: 1,
           }}
-          className="rounded-2xl overflow-hidden absolute left-32 top-5 "
+          className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
         >
           <Image
             src={digitallife}
             alt="project"
-            width={360}
-            height={360}
             className="rounded-2xl overflow-hidden  "
+            width={380}
+            height={380}
           />
         </motion.div>
       </div>

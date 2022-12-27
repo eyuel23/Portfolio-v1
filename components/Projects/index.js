@@ -14,7 +14,7 @@ export default function Project() {
         delay: 0.5,
         duration: 0.7,
       }}
-      className="flex flex-col h-[110rem] min-h-screen bg-brandColor gap-24 pt-40"
+      className="flex flex-col h-[95rem] min-h-screen bg-brandColor gap-24 pt-20"
     >
       <Heading span={"02"} heading={"WORK"} />
       <div className=" w-[95%] flex self-center items-center  justify-between">
