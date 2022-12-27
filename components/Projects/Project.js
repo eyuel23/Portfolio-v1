@@ -41,7 +41,7 @@ export default function Project() {
   };
   return (
     <>
-      <div className="flex flex-col w-full md:w-3/5 gap-10">
+      <div className="flex flex-col w-full lg:w-3/5 gap-10">
         <div
           className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           id="coinpool"
@@ -60,7 +60,7 @@ export default function Project() {
             <h1 className="text-xl ">Next-js Tailwind Spline Figma Api</h1>
           </div>
           <div className="flex gap-10 items-end" id="coinpool">
-            <p className="text-3xl text-center">
+            <p className="text-3xl text-center hidden sm:block">
               a crypto currency site where you
               <br /> can buy and sell.
             </p>
@@ -75,7 +75,7 @@ export default function Project() {
           </div>
         </div>
         <div
-          className="border-2 border-black flex items-baseline gap-8 h-52 relative"
+          className="border-2 border-black flex justify-between sm:justify-start items-baseline gap-10 h-52 relative"
           id="slack"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -92,7 +92,7 @@ export default function Project() {
             <h1 className="text-xl ">Next-js Firebase Typescript</h1>
           </div>
           <div className="flex gap-12 items-end" id="slack">
-            <p className="text-3xl text-center">
+            <p className="text-3xl text-center hidden sm:block">
               a remake of Slack app using firebase
               <br /> with functionality.
             </p>
@@ -126,7 +126,7 @@ export default function Project() {
             <h1 className="text-xl ">React Css-module Redux Figma </h1>
           </div>
           <div className="flex gap-16 items-end" id="vogue">
-            <p className="text-3xl text-center">
+            <p className="text-3xl text-center hidden sm:block">
               a ecommerce website inspired
               <br /> by vogue design
             </p>
@@ -163,7 +163,7 @@ export default function Project() {
             <h1 className="text-xl ">React Typescript Tailwind Figma </h1>
           </div>
           <div className="flex gap-14 items-end" id="digiallife">
-            <p className="text-3xl text-center">
+            <p className="text-3xl text-center hidden sm:block">
               a ecommerce website inspired
               <br /> by vogue design
             </p>
@@ -180,7 +180,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className=" relative w-2/5 h-full hidden sm:block">
+      <div className=" relative w-2/5 h-full hidden lg:block">
         <AnimatePresence>
           <motion.div
             initial={{ opacity: opacity }}
