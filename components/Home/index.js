@@ -5,9 +5,9 @@ import memoji from "../../public/header.png";
 
 export default function Hero() {
   return (
-    <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9">
+    <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9 overflow-hidden">
       <Navigation />
-      <div className="flex items-center justify-center gap-40 self-center  ">
+      <div className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse sm:flex-row ">
         <div>
           <h1 className="text-5xl font-medium intro">
             <span className=" ">Hello, I am</span>

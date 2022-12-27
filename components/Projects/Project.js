@@ -18,14 +18,14 @@ export default function Project() {
     e.preventDefault();
     const value = e.target.closest("div div").id;
     console.log(value);
-    if (value === "slack") {
-      setOpacity1("1");
+    if (value === "coinpool") {
+      setOpacity("100%");
+    } else if (value === "slack") {
+      setOpacity1("100%");
     } else if (value === "vogue") {
-      setOpacity2("1");
+      setOpacity2("100%");
     } else if (value === "digiallife") {
-      setOpacity3("1");
-    } else if (value === "coinpool") {
-      setOpacity("1");
+      setOpacity3("100%");
     }
 
     console.log(opacity3);
@@ -43,12 +43,19 @@ export default function Project() {
     <>
       <div className="flex flex-col w-3/5 gap-10">
         <div
-          className="border-2 border-black flex items-baseline gap-10 h-52 "
+          className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           id="coinpool"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
         >
-          <div className="flex flex-col items-center gap-6 m-10" id="coinpool">
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: opacity }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="bg-brandColor -z-10 absolute h-full w-full"
+            style={{ width: "100%" }}
+          ></motion.div>
+          <div className="flex flex-col items-center gap-6 m-10 " id="coinpool">
             <h1 className="text-6xl">CoinPool</h1>
             <h1 className="text-xl ">Next-js Tailwind Spline Figma Api</h1>
           </div>
@@ -68,11 +75,18 @@ export default function Project() {
           </div>
         </div>
         <div
-          className="border-2 border-black flex items-baseline gap-8 h-52 "
+          className="border-2 border-black flex items-baseline gap-8 h-52 relative"
           id="slack"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
         >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: opacity1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="bg-brandColor -z-10 absolute h-full w-full"
+            style={{ width: "100%" }}
+          ></motion.div>
           <div className="flex flex-col items-center gap-6 m-10" id="slack">
             <h1 className="text-6xl">Slack</h1>
             <h1 className="text-xl ">Next-js Firebase Typescript</h1>
@@ -95,11 +109,18 @@ export default function Project() {
           </div>
         </div>
         <div
-          className="border-2 border-black flex items-baseline gap-9 h-52 "
+          className="border-2 border-black flex items-baseline gap-9 h-52 relative"
           id="vogue"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
         >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: opacity2 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="bg-brandColor -z-10 absolute h-full w-full"
+            style={{ width: "100%" }}
+          ></motion.div>
           <div className="flex flex-col items-center gap-6 m-10" id="vogue">
             <h1 className="text-6xl">Vogue</h1>
             <h1 className="text-xl ">React Css-module Redux Figma </h1>
@@ -122,11 +143,18 @@ export default function Project() {
           </div>
         </div>
         <div
-          className="border-2 border-black flex items-baseline gap-10 h-52 "
+          className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
           id="digiallife"
         >
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: opacity3 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="bg-brandColor -z-10 absolute h-full w-full"
+            style={{ width: "100%" }}
+          ></motion.div>
           <div
             className="flex flex-col items-center gap-6 m-10"
             id="digiallife"
@@ -159,7 +187,7 @@ export default function Project() {
             animate={{ opacity: opacity }}
             transition={{
               delay: 0.5,
-              duration: 1,
+              duration: 0.5,
             }}
             className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
           >
@@ -194,7 +222,7 @@ export default function Project() {
           animate={{ opacity: opacity2 }}
           transition={{
             delay: 0.5,
-            duration: 1,
+            duration: 0.5,
           }}
           className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl "
         >
@@ -211,7 +239,7 @@ export default function Project() {
           animate={{ opacity: opacity3 }}
           transition={{
             delay: 0.5,
-            duration: 1,
+            duration: 0.5,
           }}
           className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
         >

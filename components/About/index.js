@@ -19,6 +19,7 @@ export default function About() {
         delay: 0.5,
         duration: 0.7,
       }}
+      id="about"
       className="bg-white min-h-screen h-[100rem] flex flex-col gap-40 relative pt-32 overflow-hidden"
     >
       <div className="w-[100%] flex flex-col gap-8">
