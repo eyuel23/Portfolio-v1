@@ -35,9 +35,13 @@ export default function Contact() {
           x: { duration: 1, delay: 1 },
           default: { ease: "linear" },
         }}
-        className="absolute  top-0 -left-40 "
+        className="absolute  top-0 sm:-left-40 -left-24"
       >
-        <Image src={hey} alt="hey" className="rotate-45" />
+        <Image
+          src={hey}
+          alt="hey"
+          className="rotate-45 h-96 w-96 sm:w-[400px] sm:h-[400px]"
+        />
       </motion.div>
     </footer>
   );
