@@ -41,7 +41,7 @@ export default function Project() {
   };
   return (
     <>
-      <div className="flex flex-col w-3/5 gap-10">
+      <div className="flex flex-col w-full md:w-3/5 gap-10">
         <div
           className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           id="coinpool"
@@ -180,7 +180,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className=" relative w-2/5 h-full">
+      <div className=" relative w-2/5 h-full hidden sm:block">
         <AnimatePresence>
           <motion.div
             initial={{ opacity: opacity }}
