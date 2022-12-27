@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Heading from "../heading";
+import React from "react";
+import Heading from "../Heading";
 
 import { motion } from "framer-motion";
 
