@@ -8,14 +8,16 @@ export default function Hero() {
     <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9 overflow-hidden">
       <Navigation />
       <div className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse sm:flex-row ">
-        <div>
+        <div className="flex flex-col items-center sm:block">
           <h1 className="text-5xl font-medium intro">
             <span className=" ">Hello, I am</span>
 
             <br />
-            <span className="text-[130px] font-bold ">Eyuel</span>
+            <span className="sm:text-[130px] text-[100px] font-bold">
+              Eyuel
+            </span>
           </h1>
-          <h1 className="text-5xl font-thin mt-5">
+          <h1 className="sm:text-5xl text-4xl font-thin sm:mt-5 mt-14">
             a Frontend developer, UI/UX designer
           </h1>
         </div>

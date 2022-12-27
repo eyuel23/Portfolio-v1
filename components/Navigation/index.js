@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <nav className="flex justify-between items-end p-6 text-brandColor mx-8">
       <h1 className="text-6xl font-bold font-didot logo ">EG</h1>
-      <ul className="flex gap-9 text-lg">
+      <ul className="sm:flex gap-9 text-lg hidden">
         <li value={"about"} onClick={handleClickScroll}>
           ABOUT
         </li>
