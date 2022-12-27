@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 export default function Contact() {
   return (
-    <footer className="flex flex-col items-center bg-primary text-white gap-10 py-20 relative">
+    <footer className="flex flex-col items-center bg-primary text-white gap-10 py-20 relative overflow-hidden">
       <h1 className="text-8xl font-medium">GET IN TOUCH</h1>
       <div className="border-2 border-white w-3/5 flex flex-col items-center gap-20 rounded-xl h-96 justify-center">
         <h1 className="text-6xl">Want to work together?</h1>

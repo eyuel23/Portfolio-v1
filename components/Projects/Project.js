@@ -155,7 +155,7 @@ export default function Project() {
       <div className=" relative w-2/5 h-full">
         <AnimatePresence>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: opacity }}
             animate={{ opacity: opacity }}
             transition={{
               delay: 0.5,
@@ -173,7 +173,7 @@ export default function Project() {
           </motion.div>
         </AnimatePresence>
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: opacity1 }}
           animate={{ opacity: opacity1 }}
           transition={{
             delay: 0.5,
@@ -190,7 +190,7 @@ export default function Project() {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: opacity2 }}
           animate={{ opacity: opacity2 }}
           transition={{
             delay: 0.5,
@@ -207,7 +207,7 @@ export default function Project() {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: opacity3 }}
           animate={{ opacity: opacity3 }}
           transition={{
             delay: 0.5,
