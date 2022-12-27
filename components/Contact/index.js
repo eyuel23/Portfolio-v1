@@ -12,10 +12,10 @@ export default function Contact() {
       id="contact"
       className="flex flex-col items-center bg-primary text-white gap-10 py-20 relative overflow-hidden"
     >
-      <h1 className="text-8xl font-medium">GET IN TOUCH</h1>
-      <div className="border-2 border-white w-3/5 flex flex-col items-center gap-20 rounded-xl h-96 justify-center">
-        <h1 className="text-6xl">Want to work together?</h1>
-        <button className="bg-black text-4xl p-9 rounded-xl">
+      <h1 className="sm:text-8xl text-6xl font-medium">GET IN TOUCH</h1>
+      <div className="border-2 border-white w-3/5 flex flex-col items-center sm:gap-20 gap-10 rounded-xl sm:h-96 justify-center py-5">
+        <h1 className="sm:text-6xl text-4xl">Want to work together?</h1>
+        <button className="bg-black sm:text-4xl text-3xl sm:p-9 p-5 rounded-xl">
           Say Hello 👋🏾
         </button>
       </div>
