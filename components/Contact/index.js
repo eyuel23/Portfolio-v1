@@ -35,7 +35,7 @@ export default function Contact() {
           x: { duration: 1, delay: 1 },
           default: { ease: "linear" },
         }}
-        className="absolute  top-0 sm:-left-40 -left-24"
+        className="absolute  top-0 sm:-left-36 -left-24"
       >
         <Image
           src={hey}

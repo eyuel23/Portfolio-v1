@@ -17,14 +17,14 @@ export default function Hero() {
               Eyuel
             </span>
           </h1>
-          <h1 className="sm:text-5xl text-4xl font-thin sm:mt-5 mt-14">
+          <h1 className="sm:text-5xl text-[3rem] font-thin sm:mt-5 mt-14 text-center">
             a Frontend developer, UI/UX designer
           </h1>
         </div>
         <Image src={memoji} width={600} height={600} alt="memoji" />
       </div>
 
-      <button className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce">
+      <button className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce m-10">
         <svg
           width="25"
           height="48"
