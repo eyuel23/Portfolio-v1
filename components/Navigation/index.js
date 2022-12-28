@@ -27,7 +27,7 @@ export default function Navigation() {
         </li>
       </ul>
       <button className="text-black p-3 w-40 rounded-lg shadow-lg text-xl resume">
-        Resume
+        <Link href={"/Resume"}>Resume</Link>
       </button>
     </nav>
   );
