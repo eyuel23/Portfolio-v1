@@ -1,3 +1,18 @@
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" width="100" />
+</div>
+<h1 align="center">
+  eyuelmuler.vercel.app - Portfolio-v1
+</h1>
+<p align="center">
+  The first iteration of <a href="https://eyuelmuler.vercel.app/" target="_blank">eyuelmuler.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next-js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  <a href="https://eyuelmuler.vercel.app/" target="_blank">
+    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" alt="vercel status" />
+  </a>
+</p>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
