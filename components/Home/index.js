@@ -33,7 +33,15 @@ export default function Hero() {
         <Image src={memoji} width={600} height={600} alt="memoji" />
       </motion.div>
 
-      <button className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce m-10">
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 3.2,
+          duration: 1,
+        }}
+        className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce m-10"
+      >
         <svg
           width="25"
           height="48"
@@ -46,7 +54,7 @@ export default function Hero() {
             fill="#FEFCF3"
           />
         </svg>
-      </button>
+      </motion.button>
     </header>
   );
 }

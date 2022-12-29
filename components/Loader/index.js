@@ -12,7 +12,7 @@ export default function Loader() {
   return (
     <>
       {loading ? (
-        <motion.div className="h-screen fixed top-0 bottom-0 left- right-0 w-full bg-primary flex justify-center items-center font-semibold">
+        <motion.div className="min-h-screen fixed top-0 bottom-0 left- right-0 w-full bg-primary flex justify-center items-center font-semibold z-50">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
