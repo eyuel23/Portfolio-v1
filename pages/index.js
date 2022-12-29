@@ -4,6 +4,7 @@ import Hero from "../components/Home";
 import About from "../components/About";
 import Project from "../components/Projects";
 import Contact from "../components/Contact";
+import Loader from "../components/Loader";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (

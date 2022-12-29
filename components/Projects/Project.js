@@ -97,7 +97,7 @@ export default function Project() {
               <br /> with functionality.
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
-              <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
+              <Link href={"https://github.com/eyuel23/slack-remake"}>
                 slack.com
               </Link>
             </button>
@@ -164,8 +164,8 @@ export default function Project() {
           </div>
           <div className="flex gap-14 items-end" id="digiallife">
             <p className="text-3xl text-center hidden sm:block">
-              a ecommerce website inspired
-              <br /> by vogue design
+              Get life quality of over 100 cities
+              <br /> with a click.
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
               <Link href={"https://digitallife52.netlify.app"}>
