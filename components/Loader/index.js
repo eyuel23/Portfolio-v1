@@ -16,7 +16,7 @@ export default function Loader() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
-              scale: [1, 1, 1.5, 1, 1],
+              scale: [1, 1, 1.2, 1, 1],
               opacity: "100%",
             }}
             transition={{ delay: 0.5, duration: 1 }}

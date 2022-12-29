@@ -2,12 +2,21 @@ import Image from "next/image";
 import React from "react";
 import Navigation from "../Navigation";
 import memoji from "../../public/header.png";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9 overflow-hidden">
       <Navigation />
-      <div className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse sm:flex-row ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 3.2,
+          duration: 1,
+        }}
+        className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse sm:flex-row "
+      >
         <div className="flex flex-col items-center sm:block">
           <h1 className="text-5xl font-medium intro">
             <span className=" ">Hello, I am</span>
@@ -22,7 +31,7 @@ export default function Hero() {
           </h1>
         </div>
         <Image src={memoji} width={600} height={600} alt="memoji" />
-      </div>
+      </motion.div>
 
       <button className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce m-10">
         <svg
