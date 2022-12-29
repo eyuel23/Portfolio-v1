@@ -1,5 +1,7 @@
 <div align="center">
+</a>
   <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" width="100" />
+  <a href="https://eyuelmuler.vercel.app/" target="_blank">
 </div>
 <h1 align="center">
   eyuelmuler.vercel.app - Portfolio-v1
@@ -9,7 +11,7 @@
 </p>
 <p align="center">
   <a href="https://eyuelmuler.vercel.app/" target="_blank">
-    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" alt="vercel status" />
+    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" alt="vercel status"  width="400"/>
   </a>
 </p>
 
