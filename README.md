@@ -1,7 +1,7 @@
 <div align="center">
-</a>
+<a href="https://eyuelmuler.vercel.app/" target="_blank">
   <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" width="100" />
-  <a href="https://eyuelmuler.vercel.app/" target="_blank">
+  </a>
 </div>
 <h1 align="center">
   eyuelmuler.vercel.app - Portfolio-v1
