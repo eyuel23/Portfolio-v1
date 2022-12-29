@@ -214,7 +214,7 @@ export default function Project() {
             alt="project"
             width={380}
             height={380}
-            sclassName="rounded-2xl overflow-hidden  "
+            className="rounded-2xl overflow-hidden  "
           />
         </motion.div>
         <motion.div

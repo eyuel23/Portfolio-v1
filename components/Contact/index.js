@@ -7,6 +7,9 @@ import hey from "../../public/hey.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 export default function Contact() {
+  const handleClick = () => {
+    window.location.href = "mailto:eyuelmulugeta05@gmail.com";
+  };
   return (
     <footer
       id="contact"
@@ -15,7 +18,10 @@ export default function Contact() {
       <h1 className="sm:text-8xl text-6xl font-medium">GET IN TOUCH</h1>
       <div className="border-2 border-white w-3/5 flex flex-col items-center sm:gap-20 gap-10 rounded-xl sm:h-96 justify-center py-5">
         <h1 className="sm:text-6xl text-4xl">Want to work together?</h1>
-        <button className="bg-black sm:text-4xl text-3xl sm:p-9 p-5 rounded-xl">
+        <button
+          onClick={handleClick}
+          className="bg-black sm:text-4xl text-3xl sm:p-9 p-5 rounded-xl"
+        >
           Say Hello 👋🏾
         </button>
       </div>

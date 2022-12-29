@@ -7,7 +7,6 @@ export default function Loader() {
     setTimeout(() => {
       setLoading();
     }, [3000]);
-    console.log("done");
   }, []);
   return (
     <>
