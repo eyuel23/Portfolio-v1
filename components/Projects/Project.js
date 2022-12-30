@@ -131,9 +131,7 @@ export default function Project() {
               <br /> by vogue design
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
-              <Link href={"https://eyuel23.github.io/vogue-redesign/"}>
-                Vogue.com
-              </Link>
+              <Link href={"https://vogue-redesign.vercel.app/"}>Vogue.com</Link>
             </button>
             <div>
               <Link href={"https://github.com/eyuel23/vogue-redesign"}>
