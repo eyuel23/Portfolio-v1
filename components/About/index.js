@@ -20,7 +20,7 @@ export default function About() {
         duration: 0.7,
       }}
       id="about"
-      className="bg-white min-h-screen  flex flex-col gap-40 relative py-40 overflow-hidden"
+      className="bg-white min-h-screen  flex flex-col gap-60 relative py-40 overflow-hidden"
     >
       <div className="w-[100%] flex flex-col gap-8">
         <Heading span={"01."} heading={"About Me"} />
@@ -32,7 +32,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-80 sm:justify-around text-center">
+      <div className="flex flex-col sm:flex-row gap-60 sm:justify-around text-center">
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
             <motion.div
