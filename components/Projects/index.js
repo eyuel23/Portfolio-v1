@@ -4,8 +4,6 @@ import Heading from "../Heading";
 import { motion } from "framer-motion";
 
 import Projects from "./Project";
-import MoreButton from "./MoreButton";
-import OtherProjects from "./OtherProjects";
 
 export default function Project() {
   return (
@@ -17,13 +15,12 @@ export default function Project() {
         duration: 0.7,
       }}
       id="projects"
-      className="flex flex-col h-[150rem] min-h-screen bg-white gap-24 pt-20 overflow-hidden"
+      className="flex flex-col h-[95rem] min-h-screen bg-white gap-24 pt-20 overflow-hidden"
     >
       <Heading span={"02"} heading={"WORK"} />
       <div className=" w-[95%] flex self-center items-center  justify-between">
         <Projects />
       </div>
-      <OtherProjects />
     </motion.section>
   );
 }
