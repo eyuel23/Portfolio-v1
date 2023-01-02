@@ -43,7 +43,7 @@ export default function MoreProjects() {
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">CoinPool</h1>
+            <h1 className="text-6xl">MAPTY</h1>
             <p className="text-2xl">
               a ecommerce website inspired by
               <br /> vogue design
@@ -55,22 +55,22 @@ export default function MoreProjects() {
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
-              <Link href={""}>
+              <Link href={"https://github.com/eyuel23/Random-Music-Generator"}>
                 <Image src={github} alt="github" width={32} height={32} />
               </Link>
-              <Link href={""}>
+              <Link href={"https://eyuel23.github.io/Random-Music-Generator/"}>
                 <Image src={linkIcon} alt="github" width={32} height={32} />
               </Link>
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">CoinPool</h1>
+            <h1 className="text-6xl">RMD</h1>
             <p className="text-2xl">
-              a ecommerce website inspired by
-              <br /> vogue design
+              recommends random music from
+              <br /> genius api
             </p>{" "}
           </div>
-          <h1 className="text-xl">React Css-module Redux Figma</h1>
+          <h1 className="text-xl">HTML CSS JAVASCRIPT</h1>
         </div>
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl w-[34rem] h-[24rem]">
           <div className="flex justify-between p-2 ">
@@ -91,28 +91,28 @@ export default function MoreProjects() {
               <br /> by javascript.
             </p>{" "}
           </div>
-          <h1 className="text-xl">CSS JAVASCRIPT</h1>
+          <h1 className="text-xl">HTML CSS JAVASCRIPT</h1>
         </div>
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl w-[34rem] h-[24rem]">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
-              <Link href={""}>
+              <Link href={"https://github.com/eyuel23/Tigray-Hotel"}>
                 <Image src={github} alt="github" width={32} height={32} />
               </Link>
-              <Link href={""}>
+              <Link href={"https://eyuel23.github.io/Tigray-Hotel/"}>
                 <Image src={linkIcon} alt="github" width={32} height={32} />
               </Link>
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">CoinPool</h1>
+            <h1 className="text-6xl">T-HOTEL</h1>
             <p className="text-2xl">
-              a ecommerce website inspired by
-              <br /> vogue design
+              a hotel booking site inspired by
+              <br /> Tigray
             </p>{" "}
           </div>
-          <h1 className="text-xl">React Css-module Redux Figma</h1>
+          <h1 className="text-xl">HTML CSS</h1>
         </div>
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl w-[34rem] h-[24rem]">
           <div className="flex justify-between p-2 ">
