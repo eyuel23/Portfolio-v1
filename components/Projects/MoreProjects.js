@@ -34,22 +34,22 @@ export default function MoreProjects() {
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
-              <Link href={""}>
+              <Link href={"https://github.com/eyuel23/mapty"}>
                 <Image src={github} alt="github" width={32} height={32} />
               </Link>
-              <Link href={""}>
+              {/* <Link href={"https://github.com/eyuel23/mapty"}>
                 <Image src={linkIcon} alt="github" width={32} height={32} />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">MAPTY</h1>
+            <h1 className="text-6xl">Mapty</h1>
             <p className="text-2xl">
-              a ecommerce website inspired by
-              <br /> vogue design
+              work out tracker with leaflet
+              <br /> map.
             </p>{" "}
           </div>
-          <h1 className="text-xl">React Css-module Redux Figma</h1>
+          <h1 className="text-xl">React Redux Leaflet library</h1>
         </div>
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl w-[34rem] h-[24rem]">
           <div className="flex justify-between p-2 ">
