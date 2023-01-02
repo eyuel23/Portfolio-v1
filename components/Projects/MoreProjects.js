@@ -7,7 +7,7 @@ import folder from "../../public/folder.svg";
 export default function MoreProjects() {
   return (
     <div className="flex flex-col self-center w-full items-center gap-20 mb-32">
-      <h1 className="text-6xl">Other Noteworthy Projects</h1>
+      <h1 className="lg:text-6xl text-5xl">Other Noteworthy Projects</h1>
       <div className="flex justify-evenly w-[85%] flex-wrap gap-20">
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl">
           <div className="flex justify-between p-2 ">
