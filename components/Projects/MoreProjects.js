@@ -28,7 +28,7 @@ export default function MoreProjects() {
               <br /> and Forkify Api
             </p>{" "}
           </div>
-          <h1 className="text-xl">React Css-module Redux Figma</h1>
+          <h1 className="text-xl">React Css-module Redux </h1>
         </div>
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8  shadow-xl w-[34rem] h-[24rem]">
           <div className="flex justify-between p-2 ">
@@ -87,8 +87,8 @@ export default function MoreProjects() {
           <div className="flex flex-col gap-6 pb-9 px-16 ">
             <h1 className="text-6xl">Pig-Game</h1>
             <p className="text-2xl">
-              a interactive 2 player game built by
-              <br /> javascript.
+              a interactive 2 player game built
+              <br /> by javascript.
             </p>{" "}
           </div>
           <h1 className="text-xl">CSS JAVASCRIPT</h1>
