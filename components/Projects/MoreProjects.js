@@ -13,19 +13,19 @@ export default function MoreProjects() {
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
-              <Link href={""}>
+              <Link href={"https://github.com/eyuel23/Forkify"}>
                 <Image src={github} alt="github" width={32} height={32} />
               </Link>
-              <Link href={""}>
+              <Link href={"https://forkifyreactv1.netlify.app/"}>
                 <Image src={linkIcon} alt="github" width={32} height={32} />
               </Link>
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">CoinPool</h1>
+            <h1 className="text-6xl">Forkify</h1>
             <p className="text-2xl">
-              a ecommerce website inspired by
-              <br /> vogue design
+              a recipe website built with react
+              <br /> and Forkify Api
             </p>{" "}
           </div>
           <h1 className="text-xl">React Css-module Redux Figma</h1>
