@@ -42,7 +42,11 @@ export default function Project() {
   return (
     <>
       <div className="flex flex-col w-full lg:w-3/5 gap-10">
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+          viewport={{ once: true }}
           className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           id="coinpool"
           onMouseEnter={showProject}
@@ -73,8 +77,12 @@ export default function Project() {
               </Link>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+          viewport={{ once: true }}
           className="border-2 border-black flex justify-between sm:justify-start items-baseline gap-10 h-52 relative"
           id="slack"
           onMouseEnter={showProject}
@@ -107,8 +115,12 @@ export default function Project() {
               </Link>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.2 }}
+          viewport={{ once: true }}
           className="border-2 border-black flex items-baseline gap-9 h-52 relative"
           id="vogue"
           onMouseEnter={showProject}
@@ -139,8 +151,12 @@ export default function Project() {
               </Link>
             </div>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.2 }}
           className="border-2 border-black flex items-baseline gap-10 h-52 relative"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -176,7 +192,7 @@ export default function Project() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className=" relative w-2/5 h-full hidden lg:block ">
         <AnimatePresence>

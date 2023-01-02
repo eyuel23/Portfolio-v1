@@ -4,9 +4,15 @@ import github from "../../public/github.svg";
 import linkIcon from "../../public/linkIcon.svg";
 import folder from "../../public/folder.svg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 export default function MoreProjects() {
   return (
-    <div className="flex flex-col self-center w-full items-center gap-20 mb-32">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      className="flex flex-col self-center w-full items-center gap-20 mb-32"
+    >
       <h1 className="lg:text-6xl text-5xl">Other Noteworthy Projects</h1>
       <div className="flex justify-evenly w-[85%] flex-wrap gap-20">
         <div className="flex flex-col border-2 border-black text-center gap-5 pb-8 shadow-xl w-[34rem] h-[24rem]">
@@ -136,6 +142,6 @@ export default function MoreProjects() {
           <h1 className="text-xl">React Css-module Redux Figma</h1>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
