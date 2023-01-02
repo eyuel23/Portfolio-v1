@@ -178,7 +178,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className=" relative w-2/5 h-full hidden lg:block">
+      <div className=" relative w-2/5 h-full hidden lg:block ">
         <AnimatePresence>
           <motion.div
             initial={{ opacity: opacity }}
@@ -187,7 +187,7 @@ export default function Project() {
               delay: 0.5,
               duration: 0.5,
             }}
-            className="rounded-2xl overflow-hidden absolute left-32 top-5 shadow-xl"
+            className="rounded-2xl overflow-hidden absolute left-32 top-10 shadow-xl"
           >
             <Image
               src={coinpool}
