@@ -10,6 +10,7 @@ export default function MoreProjects() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.3, duration: 1 }}
       viewport={{ once: true }}
       className="flex flex-col self-center w-full items-center gap-20 mb-32"
     >
