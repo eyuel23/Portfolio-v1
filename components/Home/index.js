@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
           </h1>
           <h1 className="sm:text-5xl text-[3rem] font-thin sm:mt-5 mt-14 text-center">
-            a Frontend developer, UI/UX designer
+            a Software engineer, UI/UX designer
           </h1>
         </div>
         <Image src={memoji} width={600} height={600} alt="memoji" />

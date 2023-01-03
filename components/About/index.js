@@ -27,7 +27,7 @@ export default function About() {
         <Heading span={"01."} heading={"About Me"} />
         <div className="text-black text-4xl text-center ">
           <p className=" leading-snug font-light ">
-            I’m a Frontend developer and UI/UX designer specializing in building
+            I’m a Software engineer and UI/UX designer specializing in building
             and designing
             <br /> exceptional digital experiences.
           </p>
