@@ -33,7 +33,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-80 sm:justify-around text-center">
+      <div className="flex flex-col sm:flex-row lg:gap-0 gap-80 sm:justify-around text-center">
         <div className="flex flex-col items-center gap-10">
           <div className="relative">
             <motion.div
