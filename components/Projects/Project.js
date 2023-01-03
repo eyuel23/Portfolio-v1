@@ -47,7 +47,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex   items-baseline gap-10 h-52 relative"
           id="coinpool"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -61,7 +61,9 @@ export default function Project() {
           ></motion.div>
           <div className="flex flex-col items-center gap-6 m-10 " id="coinpool">
             <h1 className="text-6xl">CoinPool</h1>
-            <h1 className="text-xl ">Next-js Tailwind Spline Figma Api</h1>
+            <h1 className="text-xl text-center ">
+              Next-js Tailwind Spline Figma Api
+            </h1>
           </div>
           <div className="flex gap-10 items-end" id="coinpool">
             <p className="text-3xl text-center hidden sm:block">
@@ -83,7 +85,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex justify-between sm:justify-start items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex  items-center sm:items-baseline gap-10 h-52 relative"
           id="slack"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -95,13 +97,18 @@ export default function Project() {
             className="bg-brandColor -z-10 absolute h-full w-full"
             style={{ width: "100%" }}
           ></motion.div>
-          <div className="flex flex-col items-center gap-6 m-10" id="slack">
+          <div
+            className="flex flex-col items-center gap-6 my-10 ml-10 mr-5"
+            id="slack"
+          >
             <h1 className="text-6xl">Slack</h1>
-            <h1 className="text-xl ">Next-js Firebase Typescript</h1>
+            <h1 className="text-xl text-center ">
+              Next-js Firebase Typescript Firestore
+            </h1>
           </div>
-          <div className="flex gap-12 items-end" id="slack">
+          <div className="flex gap-10 items-center  sm:items-end" id="slack">
             <p className="text-3xl text-center hidden sm:block">
-              a remake of Slack app using firebase
+              a remake of Slack using firebase
               <br /> with functionality.
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
@@ -121,7 +128,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex items-baseline gap-9 h-52 relative"
+          className="border-2 border-black flex items-center sm:items-baseline gap-10 h-52 relative"
           id="vogue"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -135,9 +142,11 @@ export default function Project() {
           ></motion.div>
           <div className="flex flex-col items-center gap-6 m-10" id="vogue">
             <h1 className="text-6xl">Vogue</h1>
-            <h1 className="text-xl ">React Css-module Redux Figma </h1>
+            <h1 className="text-xl text-center ">
+              React Css-module Redux Figma{" "}
+            </h1>
           </div>
-          <div className="flex gap-16 items-end" id="vogue">
+          <div className="flex gap-16 items-center sm:items-end" id="vogue">
             <p className="text-3xl text-center hidden sm:block">
               a ecommerce website inspired
               <br /> by vogue design
@@ -174,9 +183,11 @@ export default function Project() {
             id="digiallife"
           >
             <h1 className="text-6xl">DigitalLife</h1>
-            <h1 className="text-xl ">React Typescript Tailwind Figma </h1>
+            <h1 className="text-xl text-center ">
+              React Typescript Tailwind Figma{" "}
+            </h1>
           </div>
-          <div className="flex gap-14 items-end" id="digiallife">
+          <div className="flex gap-16 items-end" id="digiallife">
             <p className="text-3xl text-center hidden sm:block">
               Get life quality of over 100 cities
               <br /> with a click.
