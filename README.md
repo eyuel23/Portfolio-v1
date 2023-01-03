@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <a href="https://eyuelmuler.vercel.app/" target="_blank">
-    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/Desktop.png" alt="vercel status"  width="800"/>
+    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/Desktop.png" alt="vercel status"  width="900"/>
   </a>
 </p>
 
