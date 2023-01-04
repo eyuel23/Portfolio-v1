@@ -16,7 +16,7 @@ export default function MoreProjects() {
     >
       <h1 className="lg:text-6xl text-5xl">Other Noteworthy Projects</h1>
       <div className="flex justify-center w-full flex-wrap  gap-32   ">
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2  ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
@@ -37,7 +37,7 @@ export default function MoreProjects() {
           </div>
           <h1 className="text-xl">React Css-module Redux </h1>
         </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8  shadow-xl  w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8  shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
@@ -58,7 +58,7 @@ export default function MoreProjects() {
           </div>
           <h1 className="text-xl">React Redux Leaflet library</h1>
         </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
@@ -79,7 +79,7 @@ export default function MoreProjects() {
           </div>
           <h1 className="text-xl">HTML CSS JAVASCRIPT</h1>
         </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
@@ -100,7 +100,7 @@ export default function MoreProjects() {
           </div>
           <h1 className="text-xl">HTML CSS JAVASCRIPT</h1>
         </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
@@ -121,7 +121,7 @@ export default function MoreProjects() {
           </div>
           <h1 className="text-xl">HTML CSS</h1>
         </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem]">
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
