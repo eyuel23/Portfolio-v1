@@ -166,27 +166,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <Image
-        className="absolute right-20 top-32 icon hidden sm:block"
-        src={icon}
-        width={100}
-        height={100}
-        alt="icon"
-      />
-      <Image
-        className="absolute left-3 top-80 icon hidden sm:block"
-        src={icon2}
-        width={100}
-        height={100}
-        alt="icon"
-      />
-      <Image
-        className="absolute right-32 bottom-10"
-        src={icon3}
-        width={100}
-        height={100}
-        alt="icon"
-      />
     </motion.section>
   );
 }
