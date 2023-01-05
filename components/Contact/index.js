@@ -32,7 +32,15 @@ export default function Contact() {
         <Link href={"https://github.com/eyuel23"}>
           <Image className="" src={Github} width={50} height={50} alt="icon" />
         </Link>
-        <Image className="" src={Linkedin} width={50} height={50} alt="icon" />
+        <Link href={"https://www.linkedin.com/in/eyuelmuler/"}>
+          <Image
+            className=""
+            src={Linkedin}
+            width={50}
+            height={50}
+            alt="icon"
+          />
+        </Link>
       </div>
       <motion.div
         initial={{ opacity: 0, x: "-20vw" }}
