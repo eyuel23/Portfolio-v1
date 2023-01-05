@@ -14,10 +14,12 @@ export default function Project() {
   const [opacity1, setOpacity1] = useState("0");
   const [opacity2, setOpacity2] = useState("0");
   const [opacity3, setOpacity3] = useState("0");
+  const [opacity4, setOpacity4] = useState("0");
   const showProject = (e) => {
     e.preventDefault();
     const value = e.target.closest("div div").id;
     console.log(value);
+    setOpacity4("0");
     if (value === "coinpool") {
       setOpacity("100%");
     } else if (value === "slack") {
@@ -32,6 +34,7 @@ export default function Project() {
   };
   const hideProject = (e) => {
     e.preventDefault();
+    setOpacity4("1");
     setOpacity("0");
     setOpacity1("0");
     setOpacity2("0");
@@ -206,6 +209,23 @@ export default function Project() {
         </motion.div>
       </div>
       <div className=" relative w-2/5 h-full hidden lg:block ">
+        <motion.div
+          initial={{ opacity: opacity4 }}
+          animate={{ opacity: opacity4 }}
+          transition={{
+            delay: 0.5,
+            duration: 0.5,
+          }}
+          className="absolute left-32 top-[37rem]"
+        >
+          <div className=" overflow-hidden flex flex-col">
+            <h1 className="text-5xl pb-3">Projects</h1>
+            <p className="text-2xl">
+              This is a showcase of my work in a variety of fields, from Graphic
+              and Web Design to Product Design and Management.
+            </p>
+          </div>
+        </motion.div>
         <AnimatePresence>
           <motion.div
             initial={{ opacity: opacity }}
