@@ -10,12 +10,12 @@ export default function Experience() {
   return (
     <section className="min-h-screen relative flex flex-col">
       <Heading span={"02"} heading={"Experience"} />
-      <div className="flex justify-center py-20 gap-20 ">
+      <div className="flex justify-center py-20 gap-3 sm:gap-20 ">
         <div className="flex flex-col items-end gap-40">
           <Image src={open} alt="" width={200} height={200} />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 self-start sm:ml-0 ml-14">
             <div>
-              <h1 className="font-medium text-5xl">
+              <h1 className="font-medium text-5xl ">
                 Software eng
                 <span className="text-4xl text-gray-400"> @abeyza</span>
               </h1>
@@ -47,7 +47,7 @@ export default function Experience() {
 
           <Image src={finger} alt="" width={200} height={200} />
         </div>
-        <div className="">
+        <div className="hidden sm:block">
           <Image src={line} alt="line" />
         </div>
         <div className="flex flex-col items-start gap-60">
@@ -77,8 +77,14 @@ export default function Experience() {
               javascript, articulate 360
             </h1>
           </div>
-          <Image src={wink} alt="" width={200} height={200} />
-          <div className="flex flex-col gap-5">
+          <Image
+            src={wink}
+            alt=""
+            width={200}
+            height={200}
+            className="self-end sm:self-start"
+          />
+          <div className="flex flex-col gap-5 sm:pt-0 pt-40">
             <div>
               <h1 className="font-medium text-5xl">Open for Work</h1>
               <h1 className="text-gray-400 text-xl">
