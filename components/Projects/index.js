@@ -20,7 +20,7 @@ export default function Project() {
       id="projects"
       className="flex flex-col h-full bg-white gap-24 pt-20 overflow-hidden"
     >
-      <Heading span={"02"} heading={"Work"} />
+      <Heading span={"03"} heading={"Work"} />
       <div className=" w-[95%] flex self-center   justify-between">
         <Projects />
       </div>
