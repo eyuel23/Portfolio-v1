@@ -8,8 +8,13 @@ import finger from "../../public/fingerCross.png";
 
 export default function Experience() {
   return (
-    <section className="min-h-screen relative flex flex-col">
+    <section className="min-h-screen relative flex flex-col gap-10">
       <Heading span={"02"} heading={"Experience"} />
+      <div className="text-4xl text-center leading-snug font-light sm:px-0 px-7">
+        These are all of the places that I have had the opportunity to learn,
+        contribute and grow at.
+        <br />{" "}
+      </div>
       <div className="flex justify-center py-20 gap-3 sm:gap-20 ">
         <div className="flex flex-col items-end gap-40">
           <Image src={open} alt="" width={200} height={200} />
