@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <section className="min-h-screen relative flex flex-col">
       <Heading span={"02"} heading={"Experience"} />
-      <div className="flex justify-center py-24 gap-20 ">
+      <div className="flex justify-center py-20 gap-20 ">
         <div className="flex flex-col items-end gap-40">
           <Image src={open} alt="" width={200} height={200} />
           <div className="flex flex-col gap-5">
