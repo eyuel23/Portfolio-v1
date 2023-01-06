@@ -8,13 +8,14 @@ import digitallife from "../../public/digitallife.jpg";
 import coinpool from "../../public/coinpool.jpg";
 import slack from "../../public/slack.jpg";
 import { AnimatePresence } from "framer-motion";
+import proMemoji from "../../public/projectsMemoji.png";
 
 export default function Project() {
-  const [opacity, setOpacity] = useState("1");
+  const [opacity, setOpacity] = useState("0");
   const [opacity1, setOpacity1] = useState("0");
   const [opacity2, setOpacity2] = useState("0");
   const [opacity3, setOpacity3] = useState("0");
-  const [opacity4, setOpacity4] = useState("0");
+  const [opacity4, setOpacity4] = useState("1");
   const showProject = (e) => {
     e.preventDefault();
     const value = e.target.closest("div div").id;
@@ -216,14 +217,17 @@ export default function Project() {
             delay: 0.5,
             duration: 0.5,
           }}
-          className="absolute left-32 top-[37rem]"
+          className="absolute left-32 top-0"
         >
-          <div className=" overflow-hidden flex flex-col">
-            <h1 className="text-5xl pb-3">Projects</h1>
-            <p className="text-2xl">
-              This is a showcase of my work in a variety of fields, from Graphic
-              and Web Design to Product Design and Management.
-            </p>
+          <div className=" overflow-hidden flex flex-col gap-10">
+            <Image src={proMemoji} alt="memoji" />
+            <div>
+              <h1 className="text-5xl pb-3">Projects</h1>
+              <p className="text-2xl">
+                This is a showcase of my work in a variety of fields, from
+                Graphic and Web Design to Product Design and Management.
+              </p>
+            </div>
           </div>
         </motion.div>
         <AnimatePresence>
