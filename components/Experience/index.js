@@ -89,7 +89,7 @@ export default function Experience() {
             height={200}
             className="self-end sm:self-start"
           />
-          <div className="flex flex-col gap-5 sm:pt-0 pt-40">
+          <div className="flex flex-col gap-5 sm:pt-10 pt-40">
             <div>
               <h1 className="font-medium text-5xl">Open for Work</h1>
               <h1 className="text-gray-400 text-xl">
