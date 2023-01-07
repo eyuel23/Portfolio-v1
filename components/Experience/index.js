@@ -5,6 +5,7 @@ import Heading from "../Heading";
 import wink from "../../public/winkMemoji.png";
 import open from "../../public/openMemoji.png";
 import finger from "../../public/fingerCross.png";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
@@ -18,7 +19,12 @@ export default function Experience() {
       <div className="flex justify-center py-20 gap-3 sm:gap-20 ">
         <div className="flex flex-col items-end gap-40">
           <Image src={open} alt="" width={200} height={200} />
-          <div className="flex flex-col gap-5 self-start sm:ml-0 ml-14">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="flex flex-col gap-5 self-start sm:ml-0 ml-14"
+          >
             <div>
               <h1 className="font-medium text-5xl ">
                 Software eng
@@ -48,7 +54,7 @@ export default function Experience() {
               <span className="font-medium text-3xl">Skills: </span> Javascript,
               React-js, Next-js
             </h1>
-          </div>
+          </motion.div>
 
           <Image src={finger} alt="" width={200} height={200} />
         </div>
@@ -57,7 +63,12 @@ export default function Experience() {
         </div>
         <div className="flex flex-col items-start gap-60">
           {" "}
-          <div className="flex flex-col gap-5">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="flex flex-col gap-5"
+          >
             <div>
               <h1 className="font-medium text-5xl">
                 Intern
@@ -81,7 +92,7 @@ export default function Experience() {
               <span className="font-medium text-3xl">Skills: </span> python,
               javascript, articulate 360
             </h1>
-          </div>
+          </motion.div>
           <Image
             src={wink}
             alt=""
@@ -89,7 +100,12 @@ export default function Experience() {
             height={200}
             className="self-end sm:self-start"
           />
-          <div className="flex flex-col gap-5 sm:pt-10 pt-40">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="flex flex-col gap-5 sm:pt-10 pt-40"
+          >
             <div>
               <h1 className="font-medium text-5xl">Open for Work</h1>
               <h1 className="text-gray-400 text-xl">
@@ -99,7 +115,7 @@ export default function Experience() {
             <h1 className="text-2xl">
               I’m currently looking for a new journey to embark on.
             </h1>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
