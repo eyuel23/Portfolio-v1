@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
-    <section className="min-h-screen relative flex flex-col gap-10">
+    <section
+      id="experience"
+      className="min-h-screen relative flex flex-col gap-10"
+    >
       <Heading span={"02"} heading={"Experience"} />
       <div className="text-4xl text-center leading-snug font-light sm:px-0 px-7">
         These are all of the places that I have had the opportunity to learn,

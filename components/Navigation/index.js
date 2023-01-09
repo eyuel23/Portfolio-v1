@@ -19,6 +19,9 @@ export default function Navigation() {
         <li value={"about"} onClick={handleClickScroll}>
           ABOUT
         </li>
+        <li value={"contact"} onClick={handleClickScroll}>
+          EXPERIENCE
+        </li>
         <li value={"projects"} onClick={handleClickScroll}>
           PROJECTS
         </li>
