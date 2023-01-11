@@ -116,9 +116,7 @@ export default function Project() {
               <br /> with functionality.
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
-              <Link href={"https://slack-remake.vercel.app/abrhamwerede"}>
-                slack.com
-              </Link>
+              <Link href={"https://slack-remake.vercel.app/"}>slack.com</Link>
             </button>
             <div>
               <Link href={"https://github.com/eyuel23/slack-remake"}>
