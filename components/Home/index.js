@@ -5,6 +5,14 @@ import memoji from "../../public/header.png";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const handleClickScroll = (e) => {
+    e.preventDefault();
+    const element = document.getElementById(`about`);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className="text-montserrat header min-h-screen bg-primary text-brandColor flex flex-col justify-between gap-9 overflow-hidden">
       <Navigation />
@@ -41,6 +49,7 @@ export default function Hero() {
           duration: 1,
         }}
         className="border-2 border-brandColor w-16 h-32 self-center rounded-3xl mb-8 flex justify-center items-center animate-bounce m-10"
+        onClick={handleClickScroll}
       >
         <svg
           width="25"
