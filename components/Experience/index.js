@@ -112,7 +112,7 @@ export default function Experience() {
             <div>
               <h1 className="font-medium text-5xl">Open for Work</h1>
               <h1 className="text-gray-400 text-xl">
-                Present // Philadelphia,PA
+                Present // Philadelphia,PA(Remote)
               </h1>
             </div>
             <h1 className="text-2xl">
