@@ -70,6 +70,7 @@ export default function About() {
                 <li>FIGMA</li>
                 <li>PHOTOSHOP</li>
                 <li>DESGIN SYSTEM</li>
+                <li>SPLINE</li>
               </ul>
             </div>
           </div>
@@ -109,15 +110,15 @@ export default function About() {
             <div className="flex font-normal gap-16 text-2xl text-start">
               <ul className="flex flex-col gap-4 font-normal list-disc">
                 <li>HTML</li>
-                <li>CSS</li>
+                <li>CSS/SASS</li>
                 <li>JAVASCRIPT</li>
                 <li>REACT</li>
                 <li>REDUX</li>
               </ul>
               <ul className="flex flex-col gap-4 list-disc">
-                <li>SASS</li>
+                <li>PYTHON</li>
                 <li>TAILWIND</li>
-                <li>HTML</li>
+                <li>TYPESCRIPT</li>
                 <li>NEXT-JS</li>
                 <li>NODE-JS</li>
               </ul>
@@ -148,10 +149,10 @@ export default function About() {
               CREATIVITY
             </h1>
             <h1 className="text-3xl">
-              I have a knack for coming up with and <br /> innovative ideas.
-              Whether I am working
+              I have a knack for coming up with <br /> innovative ideas. Whether
+              I am working
               <br />
-              on a personal or team.
+              on a personal project or team.
             </h1>
             <h1 className="text-2xl font-semibold text-gold">
               Technologies I’ve been working with:
