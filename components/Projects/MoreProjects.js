@@ -50,6 +50,27 @@ export default function MoreProjects() {
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
+            <h1 className="text-6xl">MyFramework</h1>
+            <p className="text-2xl">
+              created my own js framework inspired
+              <br /> by react .
+            </p>{" "}
+          </div>
+          <h1 className="text-xl">Javascript NPM</h1>
+        </div>
+        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8  shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
+          <div className="flex justify-between p-2 ">
+            <Image src={folder} alt="github" width={32} height={32} />
+            <div className="flex gap-3">
+              <Link href={"https://github.com/eyuel23/mapty"}>
+                <Image src={github} alt="github" width={32} height={32} />
+              </Link>
+              {/* <Link href={"https://github.com/eyuel23/mapty"}>
+                <Image src={linkIcon} alt="github" width={32} height={32} />
+              </Link> */}
+            </div>
+          </div>
+          <div className="flex flex-col gap-6 pb-9 px-16 ">
             <h1 className="text-6xl">Mapty</h1>
             <p className="text-2xl">
               work out tracker with leaflet
@@ -120,27 +141,6 @@ export default function MoreProjects() {
             </p>{" "}
           </div>
           <h1 className="text-xl">HTML CSS</h1>
-        </div>
-        <div className="flex flex-col border-2 border-black text-center gap-10 pb-8 shadow-xl  w-[40rem] h-[26rem] hover:scale-105 hover:shadow-light hover:bg-brandColor">
-          <div className="flex justify-between p-2 ">
-            <Image src={folder} alt="github" width={32} height={32} />
-            <div className="flex gap-3">
-              <Link href={""}>
-                <Image src={github} alt="github" width={32} height={32} />
-              </Link>
-              <Link href={""}>
-                <Image src={linkIcon} alt="github" width={32} height={32} />
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 pb-9 px-16 ">
-            <h1 className="text-6xl">CoinPool</h1>
-            <p className="text-2xl">
-              a ecommerce website inspired by
-              <br /> vogue design
-            </p>{" "}
-          </div>
-          <h1 className="text-xl">React Css-module Redux Figma</h1>
         </div>
       </div>
     </motion.div>
