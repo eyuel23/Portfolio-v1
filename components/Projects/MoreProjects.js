@@ -41,12 +41,9 @@ export default function MoreProjects() {
           <div className="flex justify-between p-2 ">
             <Image src={folder} alt="github" width={32} height={32} />
             <div className="flex gap-3">
-              <Link href={"https://github.com/eyuel23/mapty"}>
+              <Link href={"https://github.com/eyuel23/MyFramework"}>
                 <Image src={github} alt="github" width={32} height={32} />
               </Link>
-              {/* <Link href={"https://github.com/eyuel23/mapty"}>
-                <Image src={linkIcon} alt="github" width={32} height={32} />
-              </Link> */}
             </div>
           </div>
           <div className="flex flex-col gap-6 pb-9 px-16 ">
