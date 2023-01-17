@@ -57,6 +57,10 @@ export default function Contact() {
           className="rotate-45 h-96 w-96 sm:w-[400px] sm:h-[400px]"
         />
       </motion.div>
+      <p className="text-center text-xl -mb-16 text-gray-300">
+        Built and designed by Eyuel gebreselassie.
+        <br /> All rights reserved. ©
+      </p>
     </footer>
   );
 }
