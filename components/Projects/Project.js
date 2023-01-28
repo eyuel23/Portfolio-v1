@@ -73,7 +73,7 @@ export default function Project() {
             </h1>
           </div>
           <div
-            className="flex gap-10 justify-evenly sm:justify-start items-center  w-1/2 sm:w-2/3"
+            className="flex gap-10 justify-evenly sm:justify-start items-center w-1/2 sm:w-2/3"
             id="coinpool"
           >
             <p className="text-3xl text-center hidden sm:block">
@@ -95,7 +95,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex  items-center sm:items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex  items-center py-5 gap-5 h-52 relative"
           id="slack"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -108,7 +108,7 @@ export default function Project() {
             style={{ width: "100%" }}
           ></motion.div>
           <div
-            className="flex flex-col items-center gap-6 my-10 ml-10 mr-5"
+            className="flex flex-col items-center gap-6 w-1/2 sm:w-1/3 "
             id="slack"
           >
             <h1 className="text-6xl">Slack</h1>
@@ -116,7 +116,10 @@ export default function Project() {
               Next-js Firebase Typescript Firestore
             </h1>
           </div>
-          <div className="flex gap-10 items-center  sm:items-end" id="slack">
+          <div
+            className="flex gap-10 justify-evenly sm:justify-start items-center w-1/2 sm:w-2/3"
+            id="slack"
+          >
             <p className="text-3xl text-center hidden sm:block">
               a remake of Slack using firebase
               <br /> with functionality.
@@ -136,7 +139,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex items-center sm:items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex  items-center py-5 gap-5 h-52 relative"
           id="vogue"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -148,16 +151,22 @@ export default function Project() {
             className="bg-brandColor -z-10 absolute h-full w-full"
             style={{ width: "100%" }}
           ></motion.div>
-          <div className="flex flex-col items-center gap-6 m-10" id="vogue">
+          <div
+            className="flex flex-col items-center gap-6 w-1/2 sm:w-1/3 "
+            id="vogue"
+          >
             <h1 className="text-6xl">Vogue</h1>
             <h1 className="text-xl text-center ">
               React Css-module Redux Figma{" "}
             </h1>
           </div>
-          <div className="flex gap-16 items-center sm:items-end" id="vogue">
+          <div
+            className="flex gap-10 justify-evenly sm:justify-start items-center w-1/2 sm:w-2/3"
+            id="vogue"
+          >
             <p className="text-3xl text-center hidden sm:block">
-              a ecommerce website inspired
-              <br /> by vogue design
+              a e-commerce website inspired
+              <br /> by vogue design.
             </p>
             <button className="bg-white shadow-lg text-xl text-black w-40 h-16">
               <Link href={"https://vogue-redesign.vercel.app/"}>Vogue.com</Link>
@@ -174,7 +183,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.2 }}
-          className="border-2 border-black flex items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex  items-center py-5 gap-5 h-52 relative"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
           id="digiallife"
@@ -187,7 +196,7 @@ export default function Project() {
             style={{ width: "100%" }}
           ></motion.div>
           <div
-            className="flex flex-col items-center gap-6 m-10"
+            className="flex flex-col items-center gap-6 w-1/2 sm:w-1/3 "
             id="digiallife"
           >
             <h1 className="text-6xl">DigitalLife</h1>
@@ -195,7 +204,10 @@ export default function Project() {
               React Typescript Tailwind Figma{" "}
             </h1>
           </div>
-          <div className="flex gap-16 items-end" id="digiallife">
+          <div
+            className="flex gap-10 justify-evenly sm:justify-start items-center w-1/2 sm:w-2/3"
+            id="digiallife"
+          >
             <p className="text-3xl text-center hidden sm:block">
               Get life quality of over 100 cities
               <br /> with a click.
