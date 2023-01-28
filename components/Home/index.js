@@ -23,7 +23,7 @@ export default function Hero() {
           delay: 3.2,
           duration: 1,
         }}
-        className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse sm:flex-row "
+        className="flex items-center justify-center gap-10 sm:gap-40 self-center flex-col-reverse lg:flex-row "
       >
         <div className="flex flex-col items-center sm:block">
           <h1 className="text-5xl font-medium intro">
