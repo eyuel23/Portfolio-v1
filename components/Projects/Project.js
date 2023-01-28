@@ -51,7 +51,7 @@ export default function Project() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.2 }}
           viewport={{ once: true }}
-          className="border-2 border-black flex   items-baseline gap-10 h-52 relative"
+          className="border-2 border-black flex  items-center py-5 gap-5 h-52 relative"
           id="coinpool"
           onMouseEnter={showProject}
           onMouseLeave={hideProject}
@@ -63,13 +63,19 @@ export default function Project() {
             className="bg-brandColor -z-10 absolute h-full w-full"
             style={{ width: "100%" }}
           ></motion.div>
-          <div className="flex flex-col items-center gap-6 m-10 " id="coinpool">
+          <div
+            className="flex flex-col items-center gap-6 w-1/2 sm:w-1/3 "
+            id="coinpool"
+          >
             <h1 className="text-6xl">CoinPool</h1>
             <h1 className="text-xl text-center ">
               Next-js Tailwind Spline Figma Api
             </h1>
           </div>
-          <div className="flex gap-10 items-end" id="coinpool">
+          <div
+            className="flex gap-10 justify-evenly sm:justify-start items-center  w-1/2 sm:w-2/3"
+            id="coinpool"
+          >
             <p className="text-3xl text-center hidden sm:block">
               a crypto currency site where you
               <br /> can buy and sell.
