@@ -21,7 +21,7 @@ export default function Loader() {
             transition={{ delay: 0.5, duration: 1 }}
             className=""
           >
-            <h1 className="text-6xl text-brandColor">#FREETIGRAY</h1>
+            <h1 className="text-6xl text-brandColor">Welcome 👋🏾 </h1>
           </motion.div>
         </motion.div>
       ) : null}
