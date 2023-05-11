@@ -40,11 +40,11 @@ export default function Experience() {
             <div className="text-2xl">
               <ul className=" list-disc flex flex-col gap-2">
                 <li>
-                  Write modern, performant, and robust code
+                  Wrote modern, performant, and robust code
                   <br /> for an array of client.
                 </li>
                 <li>
-                  Communicate and collaborate with multi-disciplinary <br />
+                  Communicated and collaborated with multi-disciplinary <br />
                   teams of engineers,designers, on a daily basis.{" "}
                 </li>
                 <li>
