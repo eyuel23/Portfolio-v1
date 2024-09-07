@@ -20,8 +20,14 @@ export default function Experience() {
         <br />{" "}
       </div>
       <div className="flex justify-center py-20 gap-3 sm:gap-20 ">
-        <div className="flex flex-col items-end gap-40">
-          <Image src={open} alt="" width={200} height={200} />
+        <div className="flex flex-col items-end gap-48">
+          <Image
+            className="pb-52 sm:pb-0"
+            src={open}
+            alt=""
+            width={200}
+            height={200}
+          />
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -31,10 +37,10 @@ export default function Experience() {
             <div>
               <h1 className="font-medium text-5xl ">
                 Software eng
-                <span className="text-4xl text-gray-400"> @abeyza</span>
+                <span className="text-4xl text-gray-400"> @Abeyza</span>
               </h1>
               <h1 className="text-gray-400 text-xl">
-                Oct 2021 - Present // Atlanta, GA
+                Oct 2021 - Jan 2023 // Atlanta, GA
               </h1>
             </div>
             <div className="text-2xl">
@@ -64,13 +70,62 @@ export default function Experience() {
         <div className="hidden sm:block">
           <Image src={line} alt="line" />
         </div>
-        <div className="flex flex-col items-start gap-60">
+        <div className="flex flex-col items-start gap-40">
           {" "}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 1 }}
             className="flex flex-col gap-5"
+          >
+            <div>
+              <h1 className="font-medium text-5xl">
+                Software engineering Intern
+                <span className="text-4xl text-gray-400 block">
+                  {" "}
+                  @Merck & Co., Inc
+                </span>
+              </h1>
+              <h1 className="text-gray-400 text-xl">
+                July 2024 - Present // West-Point, PA
+              </h1>
+            </div>
+            <div className="text-2xl">
+              <ul className=" list-disc flex flex-col gap-2">
+                <li>
+                  Actively working with Qlik to analyze and report data,
+                  <br />
+                  providing insights for better decision-making.
+                </li>
+                <li>
+                  Developing internal applications for scientists and various
+                  <br />
+                  departments to enhance operational efficiency
+                </li>
+                <li>
+                  Support cross-functional teams in integrating Power Apps,
+                  <br />
+                  Power Automate, and Power BI into existing workflows.
+                </li>
+              </ul>
+            </div>
+            <h1 className=" text-3xl">
+              <span className="font-medium text-3xl">Skills: </span> Python,
+              Qlik, Power Platform
+            </h1>
+          </motion.div>
+          <Image
+            src={wink}
+            alt=""
+            width={200}
+            height={200}
+            className="self-end sm:self-start"
+          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="flex flex-col gap-5 sm:pt-10 pt-36"
           >
             <div>
               <h1 className="font-medium text-5xl">
@@ -92,31 +147,8 @@ export default function Experience() {
               </ul>
             </div>
             <h1 className=" text-3xl">
-              <span className="font-medium text-3xl">Skills: </span> python,
-              javascript, articulate 360
-            </h1>
-          </motion.div>
-          <Image
-            src={wink}
-            alt=""
-            width={200}
-            height={200}
-            className="self-end sm:self-start"
-          />
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 1 }}
-            className="flex flex-col gap-5 sm:pt-10 pt-40"
-          >
-            <div>
-              <h1 className="font-medium text-5xl">Open for Work</h1>
-              <h1 className="text-gray-400 text-xl">
-                Present // Philadelphia,PA(Remote)
-              </h1>
-            </div>
-            <h1 className="text-2xl">
-              I’m currently looking for a new journey to embark on.
+              <span className="font-medium text-3xl">Skills: </span> Python,
+              Javascript, Articulate 360
             </h1>
           </motion.div>
         </div>
