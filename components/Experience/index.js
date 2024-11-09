@@ -80,7 +80,7 @@ export default function Experience() {
           >
             <div>
               <h1 className="font-medium text-5xl">
-                Software engineering Intern
+                Data Analyst
                 <span className="text-4xl text-gray-400 block">
                   {" "}
                   @Merck & Co., Inc
