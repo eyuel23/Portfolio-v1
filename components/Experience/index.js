@@ -40,7 +40,7 @@ export default function Experience() {
                 <span className="text-4xl text-gray-400"> @Abeyza</span>
               </h1>
               <h1 className="text-gray-400 text-xl">
-                Oct 2021 - Jan 2023 // Atlanta, GA
+                Sep 2021 - Dec 2023 // Atlanta, GA
               </h1>
             </div>
             <div className="text-2xl">
@@ -80,14 +80,14 @@ export default function Experience() {
           >
             <div>
               <h1 className="font-medium text-5xl">
-                Data Analyst
+                Data Engineer
                 <span className="text-4xl text-gray-400 block">
                   {" "}
                   @Merck & Co., Inc
                 </span>
               </h1>
               <h1 className="text-gray-400 text-xl">
-                July 2024 - Present // West-Point, PA
+                June 2024 - Present // West-Point, PA
               </h1>
             </div>
             <div className="text-2xl">
@@ -133,7 +133,7 @@ export default function Experience() {
                 <span className="text-4xl text-gray-400"> @FidelLabs</span>
               </h1>
               <h1 className="text-gray-400 text-xl">
-                Feb - July 2021 // addis-ababa, Ethiopia
+                Jan - July 2021 // addis-ababa, Ethiopia
               </h1>
             </div>
             <div className="text-2xl">
