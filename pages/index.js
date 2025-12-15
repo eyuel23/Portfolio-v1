@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Hero from "../components/Home";
 import About from "../components/About";
-import Project from "../components/Projects";
+import ProjectsSection from "../components/Projects";
 import Contact from "../components/Contact";
 import Loader from "../components/Loader";
 import Experience from "../components/Experience";
@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
-      <Project />
+      <ProjectsSection />
       <Contact />
     </>
   );

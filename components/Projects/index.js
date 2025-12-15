@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../Heading";
-
 import { motion } from "framer-motion";
-
-import Projects from "./Project";
-import MoreButton from "./MoreButton";
+import ProjectList from "./ProjectList";
+import ProjectPreview from "./ProjectPreview";
 import OtherProjects from "./OtherProjects";
 
-export default function Project() {
+export default function ProjectsSection() {
+  const [activeProjectId, setActiveProjectId] = useState(null);
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -21,8 +21,12 @@ export default function Project() {
       className="flex flex-col h-full bg-white gap-24 pt-20 overflow-hidden"
     >
       <Heading span={"03"} heading={"Work"} />
-      <div className=" w-[95%] flex self-center   justify-between">
-        <Projects />
+      <div className="w-[95%] flex self-center justify-between">
+        <ProjectList
+          activeProjectId={activeProjectId}
+          setActiveProjectId={setActiveProjectId}
+        />
+        <ProjectPreview activeProjectId={activeProjectId} />
       </div>
       <OtherProjects />
     </motion.section>

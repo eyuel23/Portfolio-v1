@@ -1,0 +1,108 @@
+import coinpool from "../../../public/coinpool.jpg";
+import slack from "../../../public/slack.jpg";
+import vogue from "../../../public/vogue.webp";
+import digitallife from "../../../public/digitallife.jpg";
+
+export const FEATURED_PROJECTS = [
+  {
+    id: "coinpool",
+    name: "CoinPool",
+    descriptionLine1: "a crypto currency site where you",
+    descriptionLine2: "can buy and sell.",
+    techStack: "Next-js Tailwind Spline Figma Api",
+    liveUrl: "https://coin-pool.vercel.app/",
+    githubUrl: "https://github.com/eyuel23/CoinPool",
+    buttonLabel: "coinpool.com",
+    image: coinpool,
+  },
+  {
+    id: "slack",
+    name: "Slack",
+    descriptionLine1: "a remake of Slack using firebase",
+    descriptionLine2: "with functionality.",
+    techStack: "Next-js Firebase Typescript Firestore",
+    liveUrl: "https://slack-remake.vercel.app/",
+    githubUrl: "https://github.com/eyuel23/slack-remake",
+    buttonLabel: "slack.com",
+    image: slack,
+  },
+  {
+    id: "vogue",
+    name: "Vogue",
+    descriptionLine1: "a e-commerce website inspired",
+    descriptionLine2: "by vogue design.",
+    techStack: "React Css-module Redux Figma",
+    liveUrl: "https://vogue-redesign.vercel.app/",
+    githubUrl: "https://github.com/eyuel23/vogue-redesign",
+    buttonLabel: "Vogue.com",
+    image: vogue,
+  },
+  {
+    id: "digitallife",
+    name: "DigitalLife",
+    descriptionLine1: "Get life quality of over 100 cities",
+    descriptionLine2: "with a click.",
+    techStack: "React Typescript Tailwind Figma",
+    liveUrl: "https://digitallife52.netlify.app",
+    githubUrl: "https://github.com/eyuel23/DigitalLife",
+    buttonLabel: "digital.com",
+    image: digitallife,
+  },
+];
+
+export const OTHER_PROJECTS = [
+  {
+    id: "forkify",
+    name: "Forkify",
+    descriptionLine1: "a recipe website built with react",
+    descriptionLine2: "and Forkify Api",
+    techStack: "React Css-module Redux",
+    liveUrl: "https://forkifyreactv1.netlify.app/",
+    githubUrl: "https://github.com/eyuel23/Forkify",
+  },
+  {
+    id: "myframework",
+    name: "MyFramework",
+    descriptionLine1: "created my own js framework inspired",
+    descriptionLine2: "by react .",
+    techStack: "Javascript NPM",
+    liveUrl: null,
+    githubUrl: "https://github.com/eyuel23/MyFramework",
+  },
+  {
+    id: "mapty",
+    name: "Mapty",
+    descriptionLine1: "work out tracker with leaflet",
+    descriptionLine2: "map.",
+    techStack: "React Redux Leaflet library",
+    liveUrl: null,
+    githubUrl: "https://github.com/eyuel23/mapty",
+  },
+  {
+    id: "rmd",
+    name: "RMD",
+    descriptionLine1: "recommends random music from",
+    descriptionLine2: "genius api",
+    techStack: "HTML CSS JAVASCRIPT",
+    liveUrl: "https://eyuel23.github.io/Random-Music-Generator/",
+    githubUrl: "https://github.com/eyuel23/Random-Music-Generator",
+  },
+  {
+    id: "pig-game",
+    name: "Pig-Game",
+    descriptionLine1: "a interactive 2 player game built",
+    descriptionLine2: "by javascript.",
+    techStack: "HTML CSS JAVASCRIPT",
+    liveUrl: "https://eyuel23.github.io/Pig-game/",
+    githubUrl: "https://github.com/eyuel23/Pig-game",
+  },
+  {
+    id: "t-hotel",
+    name: "T-HOTEL",
+    descriptionLine1: "a hotel booking site inspired by",
+    descriptionLine2: "Tigray",
+    techStack: "HTML CSS",
+    liveUrl: "https://eyuel23.github.io/Tigray-Hotel/",
+    githubUrl: "https://github.com/eyuel23/Tigray-Hotel",
+  },
+];
